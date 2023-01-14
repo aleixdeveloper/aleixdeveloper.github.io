@@ -19,9 +19,12 @@ const { title, details } = Astro.props as IExperiences;
           <div class="text-stone-700 dark:text-stone-200 my-16">
             <div class="flex justify-between items-center flex-wrap">
               <h3 class="text-xl font-semibold">{item.name}</h3>
-              <p class="text-sm dark:text-gray">
-                {item.startDate} - {item.endDate}
-              </p>
+              {item.startDate ||
+                (item.endDate && (
+                  <p class="text-sm dark:text-gray">
+                    {item.startDate} - {item.endDate}
+                  </p>
+                ))}
             </div>
             <p class="text-sm mt-3 text-rose-700 dark:text-teal-400">
               {item.location}
