@@ -98,6 +98,20 @@ export const info = {
       description: ["- Word", "- Excel", "- PowerPoint"],
     },
   ],
+  languages: [
+    {
+      name: "Catalan",
+      description: ["- Mother tongue"],
+    },
+    {
+      name: "Spanish",
+      description: ["- Mother tongue"],
+    },
+    {
+      name: "English",
+      description: ["- B1 EOI", "- Good understanding of technical language"],
+    },
+  ],
   socialMedia: {
     github: "https://github.com/aleixdeveloper",
     email: "aleixclemente@gmail.com",
