@@ -1,0 +1,28 @@
+---
+import { IHeroProps } from "@types";
+import enduroImg from "/assets/icons/motocross.png";
+import chessImg from "/assets/icons/chess.png";
+import soccerImg from "/assets/icons/soccer.png";
+const { name, about } = Astro.props as IHeroProps;
+---
+
+<section>
+  <p class="dark:text-light mt-[117px]">Hello there! I'm</p>
+
+  <h1>{name}</h1>
+  <div
+    class="dark:text-light text-xl md:text-2xl font-extralight mb-16 leading-10"
+  >
+    <span
+      >A front-end engineer from Barcelona. I am currently learning Astro and
+      Typescript, and expanding my knowledge of Nextjs. Out of web development,
+      my other passions are
+    </span> enduro <img
+      class="inline"
+      src={enduroImg}
+      height={30}
+      width={30}
+    />, football <img src={soccerImg} class="inline" height={25} width={25} /> and
+    chess <img class="inline" src={chessImg} height={25} width={25} />.
+  </div>
+</section>
