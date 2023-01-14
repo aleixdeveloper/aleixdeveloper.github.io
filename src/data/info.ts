@@ -114,19 +114,5 @@ export const info = {
         "https://github.com/aleixdeveloper/nextjs-ecommerce-tuto/tree/main",
       liveUrl: "https://fenokstore.vercel.app/",
     },
-    {
-      title: "Astro Portfolio",
-      isFeatured: true,
-      thumbnail: "/assets/images/astro-portfolio.png",
-      githubUrl: "https://github.com/uzzii-21/astro-portfolio",
-      liveUrl: "https://astro-portfolio-uzair.vercel.app/",
-    },
-    {
-      title: "Astro Portfolio",
-      isFeatured: true,
-      thumbnail: "/assets/images/astro-portfolio.png",
-      githubUrl: "https://github.com/uzzii-21/astro-portfolio",
-      liveUrl: "https://astro-portfolio-uzair.vercel.app/",
-    },
   ],
 };
