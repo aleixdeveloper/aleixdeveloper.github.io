@@ -3,6 +3,7 @@ import { IHeroProps } from "@types";
 import enduroImg from "../../assets/icons/motocross.png";
 import chessImg from "../../assets/icons/chess.png";
 import soccerImg from "../../assets/icons/soccer.png";
+import bassImg from "../../assets/icons/bass.png";
 import { Image, Picture } from "@astrojs/image/components";
 const { name, about } = Astro.props as IHeroProps;
 ---
@@ -31,12 +32,18 @@ const { name, about } = Astro.props as IHeroProps;
       height={25}
       width={25}
     />
-    and chess <Image
+    , chess <Image
       class="inline"
       alt="chess image"
       src={chessImg}
       height={25}
       width={25}
+    /> and bass <Image
+      class="inline"
+      alt="bass image"
+      src={bassImg}
+      height={30}
+      width={30}
     />.
   </div>
 </section>

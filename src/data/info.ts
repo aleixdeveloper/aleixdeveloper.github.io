@@ -135,5 +135,12 @@ export const info = {
       githubUrl: "",
       liveUrl: "",
     },
+    {
+      title: "Wordle for small competitions",
+      isFeatured: true,
+      thumbnail: "/assets/images/wordle/wordle.jpg",
+      githubUrl: "",
+      liveUrl: "",
+    },
   ],
 };
