@@ -1,8 +1,9 @@
 ---
 import { IHeroProps } from "@types";
-import enduroImg from "/assets/icons/motocross.png";
-import chessImg from "/assets/icons/chess.png";
-import soccerImg from "/assets/icons/soccer.png";
+import enduroImg from "../../assets/icons/motocross.png";
+import chessImg from "../../assets/icons/chess.png";
+import soccerImg from "../../assets/icons/soccer.png";
+import { Image, Picture } from "@astrojs/image/components";
 const { name, about } = Astro.props as IHeroProps;
 ---
 
@@ -17,12 +18,25 @@ const { name, about } = Astro.props as IHeroProps;
       >A front-end engineer from Barcelona. I am currently learning Astro and
       Typescript, and expanding my knowledge of Nextjs. Out of web development,
       my other passions are
-    </span> enduro <img
+    </span> enduro <Image
       class="inline"
+      alt="enduro image"
       src={enduroImg}
       height={30}
       width={30}
-    />, football <img src={soccerImg} class="inline" height={25} width={25} /> and
-    chess <img class="inline" src={chessImg} height={25} width={25} />.
+    />, football <Image
+      src={soccerImg}
+      class="inline"
+      alt="soccer image"
+      height={25}
+      width={25}
+    />
+    and chess <Image
+      class="inline"
+      alt="chess image"
+      src={chessImg}
+      height={25}
+      width={25}
+    />.
   </div>
 </section>

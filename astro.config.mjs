@@ -4,6 +4,9 @@ import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
+import image from "@astrojs/image";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://aleixdeveloper.github.io",
   integrations: [
@@ -15,5 +18,6 @@ export default defineConfig({
       entryLimit: 10000,
     }),
     robotsTxt(),
+    image(),
   ],
 });
