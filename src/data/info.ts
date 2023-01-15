@@ -128,5 +128,12 @@ export const info = {
         "https://github.com/aleixdeveloper/nextjs-ecommerce-tuto/tree/main",
       liveUrl: "https://fenokstore.vercel.app/",
     },
+    {
+      title: "Map markers around the world",
+      isFeatured: true,
+      thumbnail: "/assets/images/encyclopedia-tourist/encyclopedia.jpg",
+      githubUrl: "",
+      liveUrl: "",
+    },
   ],
 };
