@@ -1,0 +1,38 @@
+---
+import { sliceIntoChunks } from "@components/home/helper";
+import HexagonRow from "./HexagonRow.astro";
+
+const { stack } = Astro.props;
+const splitedArr = sliceIntoChunks(stack, [2, 4, 5, 4, 3]);
+---
+
+<section class="flex items-center justify-between flex-col dark:text-light">
+  <h2
+    class="self-start mb-1 ml-2 dark:text-slate-200 text-stone-700 text-3xl italic font-mono font-bold"
+  >
+    My stack
+  </h2>
+  <div
+    class="rounded-xl w-full h-full mx-auto mt-10 bg-gradient-to-r p-[6px] colorful-gradient"
+  >
+    <div
+      class="w-full h-full py-6 md:py-10 flex flex-col justify-center shadow-lg md:shadow-2xl flex-wrap content-center bg-slate-100/80 dark:bg-zinc-800/80 text-white rounded-lg p-4"
+    >
+      {
+        splitedArr.map((row, indx, arr) => (
+          <HexagonRow
+            elements={row}
+            firstHalf={indx < Math.ceil(arr.length / 2)}
+          />
+        ))
+      }
+    </div>
+  </div>
+  <!-- <div
+    class="bg-gradient-to-bl colorful-gradient w-full h-full py-6 md:py-10 rounded-xl flex flex-col justify-center shadow-lg md:shadow-2xl flex-wrap content-center"
+  >
+   
+  </div> -->
+</section>
+
+<style></style>

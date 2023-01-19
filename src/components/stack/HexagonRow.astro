@@ -1,0 +1,29 @@
+---
+import Hexagon from "./Hexagon.astro";
+
+const { elements, firstHalf } = Astro.props;
+---
+
+<div
+  class={`row h-[47.5px] md:h-[71.5px] lg:h-[95px] flex ${
+    firstHalf
+      ? "odd:ml-[26.5px] md:odd:ml-[39.5px] lg:odd:ml-[52.5px]"
+      : "  justify-end even:mr-[26.5px]  md:even:mr-[39.5px] lg:even:mr-[52.5px]"
+  }`}
+>
+  {elements.map((el) => <Hexagon element={el} />)}
+</div>
+
+<!-- -->
+
+<style>
+  /*  .row.align-left:nth-of-type(odd) {
+    margin-left: 52.5px;
+  }
+  .row.align-right {
+    justify-content: end;
+  }
+  .row.align-right:nth-of-type(even) {
+    margin-right: 52.5px;
+  } */
+</style>

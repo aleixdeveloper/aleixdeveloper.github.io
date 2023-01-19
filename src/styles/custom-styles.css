@@ -47,3 +47,7 @@
   }
 }
  */
+
+.colorful-gradient {
+  @apply from-orange-300 via-fuchsia-500 to-indigo-500;
+}

@@ -25,7 +25,7 @@
     @apply font-outfit;
   }
   h1 {
-    @apply text-6xl sm:text-8xl bg-gradient-to-r  from-rose-400 via-purple-500 to-sky-400 dark:from-rose-400 dark:via-purple-600 dark:to-sky-500 main-heading;
+    @apply text-6xl sm:text-8xl bg-gradient-to-l  from-rose-400 via-purple-500 to-sky-400 dark:from-orange-300 dark:via-fuchsia-500 dark:to-indigo-500 main-heading;
   }
   h2 {
     @apply text-xl font-semibold;
