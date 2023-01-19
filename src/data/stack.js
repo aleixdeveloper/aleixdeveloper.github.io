@@ -1,0 +1,21 @@
+
+export const stack = [
+  "js",
+  "ts",
+  "react",
+  "next",
+  "node",
+  "astro",
+  "rtl",
+  "vitest",
+  "tailwindcss",
+  "figma",
+  "mui",
+  "git",
+  "mongodb",
+  "eslint",
+  "strapi",
+  "chartjs",
+  "expo",
+  "apexcharts",
+]
