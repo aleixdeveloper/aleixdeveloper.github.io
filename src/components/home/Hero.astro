@@ -8,15 +8,15 @@ import { Image, Picture } from "@astrojs/image/components";
 const { name, about } = Astro.props as IHeroProps;
 ---
 
-<section>
+<section
+  class="text-stone-600 dark:text-stone-300 font-extralight text-lg md:text-xl md:leading-9 leading-12"
+>
   <p class="dark:text-light mt-[117px]">
     Welcome to my virtual resume! My name is
   </p>
 
   <h1>{name}</h1>
-  <div
-    class="text-stone-600 dark:text-stone-300 text-xl md:text-2xl font-extralight mb-14 md:leading-9 leading-12"
-  >
+  <div class="mb-14">
     <span
       >A front-end engineer from Barcelona. I am currently learning Astro and
       Typescript, and expanding my knowledge of Nextjs. Out of web development,
