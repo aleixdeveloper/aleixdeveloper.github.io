@@ -33,7 +33,7 @@
   p,
   li,
   a {
-    @apply font-inter text-dark-gray;
+    @apply font-outfit text-dark-gray;
   }
   .footer-icons {
     @apply text-zinc-700 bg-zinc-200  dark:text-zinc-300 dark:bg-zinc-700 flex items-center p-3 rounded-lg justify-center;
