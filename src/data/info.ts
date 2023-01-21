@@ -1,5 +1,5 @@
 export const info = {
-  baseUrl: "https://astro-portfolio-uzair.vercel.app",
+  baseUrl: "https://aleixdeveloper.github.io",
   name: "Aleix Clemente",
   jobDescription: "Web Developer",
   about: `A front-end engineer from Barcelona. I am currently learning Astro and Typescript, and expanding my knowledge of Nextjs. Apart from web development, my other passions are enduro, football and chess.

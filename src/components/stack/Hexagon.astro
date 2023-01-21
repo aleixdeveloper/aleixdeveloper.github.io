@@ -1,5 +1,6 @@
 ---
 import { dictionary } from "src/data/stack";
+import { Image } from "@astrojs/image/components";
 
 const { element } = Astro.props;
 const el = dictionary[element];
@@ -16,8 +17,14 @@ const el = dictionary[element];
   >
     &#x2B22;
   </span>
-  <img src={el.img} class="absolute w-10/12" />
-
+  <!--   <img src={el.img} class="absolute w-10/12" /> -->
+  <Image
+    src={el.img}
+    class="absolute w-10/12"
+    alt="soccer image"
+    height={100}
+    width={100}
+  />
   <p
     class="invisible bg-slate-900/75 p-1 text-3xl font-sans rounded font-light whitespace-nowrap absolute group-hover:visible text-white -bottom-14"
   >
