@@ -5,10 +5,8 @@ const { elements, firstHalf } = Astro.props;
 ---
 
 <div
-  class={`row h-[47.5px] md:h-[71.5px] lg:h-[95px] flex ${
-    firstHalf
-      ? "odd:ml-[26.5px] md:odd:ml-[39.5px] lg:odd:ml-[52.5px]"
-      : "  justify-end even:mr-[26.5px]  md:even:mr-[39.5px] lg:even:mr-[52.5px]"
+  class={`row h-[4.7em] flex ${
+    firstHalf ? "odd:ml-[2.6em]" : "justify-end even:mr-[2.6em]"
   }`}
 >
   {elements.map((el) => <Hexagon element={el} />)}
@@ -27,3 +25,5 @@ const { elements, firstHalf } = Astro.props;
     margin-right: 52.5px;
   } */
 </style>
+<!-- h-[47.5px] md:h-[71.5px] lg:h-[95px] -->
+<!-- odd:ml-[26.5px] md:odd:ml-[39.5px] lg:odd:ml-[52.5px] -->

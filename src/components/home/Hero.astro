@@ -9,14 +9,16 @@ const { name } = Astro.props as IHeroProps;
 ---
 
 <section
-  class="text-stone-600 dark:text-stone-300 font-extralight text-lg md:text-xl md:leading-9 leading-12 xl:h-screen"
+  class="text-stone-600 flex flex-col justify-evenly dark:text-stone-300 font-extralight text-lg sm:text-2xl lg:text-3xl h-screen -mt-10"
 >
-  <p class="dark:text-light mt-[117px]">
-    Welcome to my virtual resume! My name is
-  </p>
+  <div class="flex flex-col gap-10">
+    <p class="dark:text-stone-200 mt-[117px]">
+      Welcome to my virtual resume! My name is
+    </p>
 
-  <h1>{name}</h1>
-  <div class="mb-14">
+    <h1>{name}</h1>
+  </div>
+  <div class="mb-14 leading-loose">
     <span
       >A front-end engineer from Barcelona. I am currently learning Astro and
       Typescript, and expanding my knowledge of Nextjs. Out of web development,
@@ -26,26 +28,26 @@ const { name } = Astro.props as IHeroProps;
       alt="enduro image"
       src={enduroImg}
       height={30}
-      width={30}
+      aspectRatio="1:1"
     />, football <Image
       src={soccerImg}
       class="inline"
       alt="soccer image"
       height={25}
-      width={25}
+      aspectRatio="1:1"
     />
     , chess <Image
       class="inline"
       alt="chess image"
       src={chessImg}
       height={25}
-      width={25}
+      aspectRatio="1:1"
     /> and bass <Image
       class="inline"
       alt="bass image"
       src={bassImg}
       height={30}
-      width={30}
+      aspectRatio="1:1"
     />.
   </div>
 </section>
