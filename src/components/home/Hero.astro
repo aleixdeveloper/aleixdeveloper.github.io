@@ -9,11 +9,13 @@ const { name, about } = Astro.props as IHeroProps;
 ---
 
 <section>
-  <p class="dark:text-light mt-[117px]">Hello there! I'm</p>
+  <p class="dark:text-light mt-[117px]">
+    Welcome to my virtual resume! My name is
+  </p>
 
   <h1>{name}</h1>
   <div
-    class="dark:text-light text-xl md:text-2xl font-extralight mb-16 leading-10"
+    class="text-stone-600 dark:text-stone-300 text-xl md:text-2xl font-extralight mb-14 md:leading-9 leading-12"
   >
     <span
       >A front-end engineer from Barcelona. I am currently learning Astro and
@@ -47,3 +49,9 @@ const { name, about } = Astro.props as IHeroProps;
     />.
   </div>
 </section>
+
+<style>
+  section {
+    @apply max-w-[1112px] mx-auto px-4 md:px-6;
+  }
+</style>

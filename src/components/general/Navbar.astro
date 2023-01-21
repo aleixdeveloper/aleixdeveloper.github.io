@@ -1,8 +1,11 @@
 ---
-import { info } from "@data";
-import { createLogo } from "@utils";
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
 
-import logo from "/assets/images/logo.webp";
+const goto =
+  currentPath === "projects"
+    ? { name: "Home", to: "/" }
+    : { name: "Projects", to: "/projects" };
 ---
 
 <header
@@ -17,8 +20,8 @@ import logo from "/assets/images/logo.webp";
   <nav>
     <ul class="flex items-center">
       <li>
-        <a class="p-4 dark:text-light block text-lg" href="/projects"
-          >Projects</a
+        <a class="p-4 dark:text-light block text-lg" href={goto.to}
+          >{goto.name}</a
         >
       </li>
       <!-- <li>

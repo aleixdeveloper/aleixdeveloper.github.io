@@ -18,6 +18,8 @@ export default defineConfig({
       entryLimit: 10000,
     }),
     robotsTxt(),
-    image(),
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+    }),
   ],
 });

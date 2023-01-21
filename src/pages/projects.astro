@@ -20,8 +20,15 @@ const Projects = info.projects.map((project) => project);
 
   <body>
     <Layout>
-      <h1 style="line-height: 1.2;">Projects</h1>
-      <ProjectsWrapper projects={Projects} />
+      <section>
+        <h1 class="ml-2 my-4 sm:ml-0" style="line-height: 1.2;">Projects</h1>
+        <ProjectsWrapper projects={Projects} />
+      </section>
     </Layout>
+    <style>
+      section {
+        @apply max-w-[1112px] mx-auto sm:px-4 md:px-6;
+      }
+    </style>
   </body>
 </html>

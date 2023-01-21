@@ -1,6 +1,12 @@
 ---
-import { Image } from "@astrojs/image/components";
 import { IProjectDetails } from "@types";
+import { Image, Picture } from "@astrojs/image/components";
+
+import localImage from "../../assets/icons/bass.png";
+const remoteImage = "https://picsum.photos/id/957/300/200.jpg";
+const localAlt = "The Astro Logo";
+const remoteAlt = "A low-angle view of a forest during the daytime";
+
 const { projectDetail } = Astro.props as IProjectDetails;
 const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
 ---
@@ -60,14 +66,17 @@ const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
       )
     }
   </div>
-  <img
+
+  <Image
     src={thumbnail}
     class="w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s]"
-    width="100%"
     loading="lazy"
-    height="100%"
+    width="800"
+    aspectRatio="1:1"
+    format="jpg"
     alt="feature Image"
   />
+
   <div
     class="absolute w-full bottom-0 left-0 backdrop-blur-md dark:text-white text-white bg-black/50 p-4 translate-y-[100%] group-hover:translate-y-0 transition duration-700"
   >

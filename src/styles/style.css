@@ -36,6 +36,6 @@
     @apply font-inter text-dark-gray;
   }
   .footer-icons {
-    @apply dark:text-light flex items-center border border-dark dark:border-light p-4 rounded-lg justify-center;
+    @apply text-zinc-700 bg-zinc-200  dark:text-zinc-300 dark:bg-zinc-700 flex items-center p-3 rounded-lg justify-center;
   }
 }
