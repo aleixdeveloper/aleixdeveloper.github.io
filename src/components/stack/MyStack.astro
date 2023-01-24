@@ -3,7 +3,8 @@ import { sliceIntoChunks } from "@components/home/helper";
 import HexagonRow from "./HexagonRow.astro";
 
 const { stack } = Astro.props;
-const splitedArr = sliceIntoChunks(stack, [2, 4, 5, 4, 3]);
+const splitedArr =
+  stack; /* sliceIntoChunks(stack, [1, 2, 3, 3, 3, 2, 2, 2, 1]); */ //[2, 4, 5, 4, 3]
 ---
 
 <section class="flex items-center justify-center flex-col dark:text-light">
@@ -13,18 +14,21 @@ const splitedArr = sliceIntoChunks(stack, [2, 4, 5, 4, 3]);
     My stack
   </h2>
   <div
-    class="md:rounded-xl w-full h-full mx-auto mt-2 md:mt-6 bg-gradient-to-r py-1 md:px-1 colorful-gradient"
+    class="md:rounded-xl w-full h-full mx-auto mt-2 md:mt-6 bg-gradient-to-r py-1 md:px-1 lg:p-3 colorful-gradient"
   >
     <div
-      class="w-full h-full py-6 md:py-10 flex flex-col justify-center shadow-lg md:shadow-2xl flex-wrap content-center bg-slate-100/80 dark:bg-zinc-800/80 text-white md:rounded-lg"
+      class="h-full py-6 md:py-10 flex flex-col justify-center shadow-lg md:shadow-2xl flex-wrap content-center bg-slate-100/80 dark:bg-zinc-800/80 text-white md:rounded-lg"
     >
       {
-        splitedArr.map((row, indx, arr) => (
-          <HexagonRow
-            elements={row}
-            firstHalf={indx < Math.ceil(arr.length / 2)}
-          />
-        ))
+        splitedArr.map((row, indx, arr) => {
+          return (
+            <HexagonRow
+              category={row.category}
+              techs={row.tech}
+              firstHalf={indx < Math.ceil(arr.length / 2)}
+            />
+          );
+        })
       }
     </div>
   </div>

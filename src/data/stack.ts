@@ -15,7 +15,8 @@ const figmaImg = "/assets/icons/DEV_TECHS/figma.png";
 const vitestImg = "/assets/icons/DEV_TECHS/vitest.png";
 const expoImg = "/assets/icons/DEV_TECHS/expo.png";
 const apexchartsImg = "/assets/icons/DEV_TECHS/apexcharts.png";
-//import nodeImg from "/assets/svg/node.svg";
+const headlessuiImg = "/assets/icons/DEV_TECHS/headlessui.png";
+const nodeImg = "/assets/icons/DEV_TECHS/node.png";
 
 export const dictionary = {
   js: { name: "JavaScript", img: jsImg, value: 10, color: "#111" },
@@ -62,5 +63,11 @@ export const dictionary = {
     value: 7,
     color: "#010101",
   },
-  //node: { name: "Nodejs", img: nodeImg, value: 8, color: "#233056" },
+  headlessui: {
+    name: "Headless UI",
+    img: headlessuiImg,
+    value: 7,
+    color: "#111827",
+  },
+  node: { name: "Nodejs", img: nodeImg, value: 8, color: "#233056" },
 };
