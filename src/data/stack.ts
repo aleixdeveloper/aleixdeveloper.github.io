@@ -69,5 +69,5 @@ export const dictionary = {
     value: 7,
     color: "#111827",
   },
-  node: { name: "Nodejs", img: nodeImg, value: 8, color: "#233056" },
+  node: { name: "Nodejs", img: nodeImg, value: 8, color: "#1a2545" },
 };
