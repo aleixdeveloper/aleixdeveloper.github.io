@@ -8,7 +8,7 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://aleixdeveloper.github.io",
+  site: "https://aleixdeveloper.github.io/",
   integrations: [
     tailwind(),
     sitemap({

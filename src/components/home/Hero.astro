@@ -1,11 +1,7 @@
 ---
 import { IHeroProps } from "@types";
-import enduroImg from "../../assets/icons/motocross.png";
-import chessImg from "../../assets/icons/chess.png";
-import soccerImg from "../../assets/icons/soccer.png";
-import bassImg from "../../assets/icons/bass.png";
-import { Image } from "@astrojs/image/components";
 const { name } = Astro.props as IHeroProps;
+const icons_dir = "/assets/icons/";
 ---
 
 <section
@@ -23,31 +19,32 @@ const { name } = Astro.props as IHeroProps;
       >A front-end engineer from Barcelona. I am currently learning Astro and
       Typescript, and expanding my knowledge of Nextjs. Out of web development,
       my other passions are
-    </span> enduro <Image
+    </span>
+    enduro <img
       class="inline"
       alt="enduro image"
-      src={enduroImg}
+      src={icons_dir + "motocross.png"}
       height={30}
-      aspectRatio="1:1"
-    />, football <Image
-      src={soccerImg}
+      width={30}
+    />, football <img
+      src={icons_dir + "soccer.png"}
       class="inline"
       alt="soccer image"
       height={25}
-      aspectRatio="1:1"
+      width={25}
     />
-    , chess <Image
+    , chess <img
       class="inline"
       alt="chess image"
-      src={chessImg}
+      src={icons_dir + "chess.png"}
       height={25}
-      aspectRatio="1:1"
-    /> and bass <Image
+      width={25}
+    /> and bass <img
       class="inline"
       alt="bass image"
-      src={bassImg}
+      src={icons_dir + "bass.png"}
       height={30}
-      aspectRatio="1:1"
+      width={30}
     />.
   </div>
 </section>
