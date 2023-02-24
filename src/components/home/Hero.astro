@@ -2,7 +2,6 @@
 import { IHeroProps } from "@types";
 import Description from "./Description.astro";
 import HeroImage from "./HeroImage.astro";
-import Wave from "./Wave.astro";
 const { name } = Astro.props as IHeroProps;
 ---
 
@@ -24,7 +23,7 @@ const { name } = Astro.props as IHeroProps;
       </div>
     </div>
   </div>
-  <div class="leading-loose mx-auto flex items-center">
+  <div class="leading-loose mx-auto flex items-center text-2xl">
     <Description />
   </div>
 </section>
