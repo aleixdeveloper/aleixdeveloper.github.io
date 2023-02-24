@@ -1,56 +1,41 @@
 ---
 import { IHeroProps } from "@types";
+import Description from "./Description.astro";
+import HeroImage from "./HeroImage.astro";
+import Wave from "./Wave.astro";
 const { name } = Astro.props as IHeroProps;
-const icons_dir = "/assets/icons/";
 ---
 
 <section
-  class="text-stone-600 flex flex-col justify-evenly dark:text-stone-300 font-extralight text-lg sm:text-2xl lg:text-3xl h-screen -mt-10"
+  class="text-stone-600 flex flex-col mt-10 gap-10 relative w-full dark:text-stone-300 font-extralight text-lg sm:text-2xl lg:text-3xl"
 >
-  <div class="flex flex-col gap-10">
-    <p class="dark:text-stone-200 mt-[117px]">
-      Welcome to my virtual resume! My name is
-    </p>
+  <div class="flex flex-col lg:flex-row lg:gap-10 items-center h-3/5">
+    <div class="flex flex-col gap-10 w-full lg:w-2/3">
+      <p class="dark:text-stone-200">
+        Welcome to my virtual resume! My name is
+      </p>
 
-    <h1>{name}</h1>
+      <h1>{name}</h1>
+    </div>
+    <div class="w-full lg:w-1/3 flex items-center aspect-square">
+      <!-- <img src="/test/silhouette.png" class="" /> -->
+      <div class="w-full h-full hero-img">
+        <HeroImage />
+      </div>
+    </div>
   </div>
-  <div class="mb-14 leading-loose">
-    <span
-      >A front-end engineer from Barcelona. I am currently learning Astro and
-      Typescript, and expanding my knowledge of Nextjs. Out of web development,
-      my other passions are
-    </span>
-    enduro <img
-      class="inline"
-      alt="enduro image"
-      src={icons_dir + "motocross.png"}
-      height={30}
-      width={30}
-    />, football <img
-      src={icons_dir + "soccer.png"}
-      class="inline"
-      alt="soccer image"
-      height={25}
-      width={25}
-    />
-    , chess <img
-      class="inline"
-      alt="chess image"
-      src={icons_dir + "chess.png"}
-      height={25}
-      width={25}
-    /> and bass <img
-      class="inline"
-      alt="bass image"
-      src={icons_dir + "bass.png"}
-      height={30}
-      width={30}
-    />.
+  <div class="leading-loose mx-auto flex items-center">
+    <Description />
   </div>
 </section>
 
 <style>
   section {
-    @apply max-w-[1112px] mx-auto px-4 md:px-6;
+    @apply max-w-6xl mx-auto px-4 md:px-6;
+    height: calc(100vh - 160px);
+    margin-bottom: 80px;
+  }
+  .hero-img {
+    transform: scale(-1, 1);
   }
 </style>

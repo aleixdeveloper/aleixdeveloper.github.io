@@ -14,7 +14,7 @@
     @apply bg-[#EEEDEC] dark:bg-[#1E1D22];
   }
   .container {
-    @apply max-w-[1112px] mx-auto px-4 md:px-10;
+    @apply max-w-6xl mx-auto px-4 md:px-10;
   }
   h1,
   h2,
@@ -25,7 +25,7 @@
     @apply font-outfit;
   }
   h1 {
-    @apply text-6xl sm:text-8xl bg-gradient-to-l  from-rose-400 via-purple-500 to-sky-400 dark:from-orange-300 dark:via-fuchsia-500 dark:to-indigo-500 main-heading;
+    @apply text-6xl sm:text-8xl bg-gradient-to-r  from-orange-300 to-[#F97D68] main-heading;
   }
   h2 {
     @apply text-xl font-semibold;
@@ -39,3 +39,11 @@
     @apply text-zinc-700 bg-zinc-200  dark:text-zinc-300 dark:bg-zinc-700 flex items-center p-3 rounded-lg justify-center;
   }
 }
+
+/*
+orange FDBA74
+
+
+mid F97D68
+
+rosa f43f5e */

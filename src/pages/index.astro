@@ -3,6 +3,7 @@ import { info } from "@data";
 
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/home/Hero.astro";
+import Wave from "@components/home/Wave.astro";
 import Experience from "@components/home/Experience.astro";
 import MyStack from "@components/stack/MyStack.astro";
 import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
@@ -33,6 +34,10 @@ const featureProjects = info.projects.map((project, index) => {
   <body>
     <Layout>
       <Hero name={info.name} about={info.about} />
+      <div class="absolute bottom-0 w-full max-h-[340px]">
+        <Wave />
+      </div>
+
       <MyStack stack={info.stack} />
       <Experience title={"EXPERIENCE"} details={info.experience} />
       <Experience title={"EDUCATION"} details={info.education} />
