@@ -17,7 +17,7 @@ const { name } = Astro.props as IHeroProps;
       <h1>{name}</h1>
     </div>
     <div class="w-full lg:w-1/3 flex items-center aspect-square">
-      <div class="w-full h-full hero-img border">
+      <div class="w-full h-full hero-img">
         <HeroImage />
       </div>
     </div>
@@ -30,7 +30,6 @@ const { name } = Astro.props as IHeroProps;
 <style>
   section {
     @apply max-w-6xl mx-auto px-4 md:px-6;
-    /*   height: calc(100vh - 160px); */
     margin-bottom: 80px;
   }
   .hero-img {
