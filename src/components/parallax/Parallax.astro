@@ -2,11 +2,9 @@
 const { direction } = Astro.props;
 ---
 
-<section class="text-slate-200">
-  <div class={`reveal ${direction}`}>
-    <slot />
-  </div>
-</section>
+<div class={`reveal ${direction}`}>
+  <slot />
+</div>
 
 <style>
   .left {
