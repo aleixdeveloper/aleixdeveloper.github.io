@@ -1,0 +1,59 @@
+---
+const { direction } = Astro.props;
+---
+
+<section class="text-slate-200">
+  <div class={`reveal ${direction}`}>
+    <slot />
+  </div>
+</section>
+
+<style>
+  .left {
+    text-align: left;
+  }
+
+  .right {
+    text-align: right;
+    margin-left: auto;
+  }
+  .reveal {
+    position: relative;
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .reveal.left {
+    transform: translateX(150px);
+  }
+  .reveal.right {
+    transform: translateX(-150px);
+  }
+
+  .reveal.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+</style>
+
+<script>
+  const reveal = () => {
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach((element) => {
+      let isAnimationPlayed = false;
+
+      const windowHeight = window.innerHeight;
+      const elementTop = element.getBoundingClientRect().top;
+      const elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible && !isAnimationPlayed) {
+        element.classList.add("active");
+        isAnimationPlayed = true;
+      }
+    });
+  };
+
+  window.addEventListener("load", reveal);
+  window.addEventListener("scroll", reveal);
+</script>
