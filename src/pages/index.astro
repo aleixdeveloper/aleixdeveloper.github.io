@@ -55,11 +55,17 @@ const featureProjects = info.projects.map((project, index) => {
         <Experience title={"ADD-ONS"} details={info.addOns} />
       </div>
       <section>
-        <h2
-          class="w-[15rem] ml-3 sm:ml-0 text-2xl sm:text-xl mt-16 text-zinc-600/50 dark:text-zinc-300/50 font-bold border-b sm:border-none"
-        >
-          FEATURE PROJECTS
-        </h2>
+        <div class="flex justify-between items-end">
+          <h2
+            class="w-[15rem] ml-3 sm:ml-0 text-2xl sm:text-xl mt-16 text-zinc-600/50 dark:text-zinc-300/50 font-bold border-b sm:border-none"
+          >
+            FEATURE PROJECTS
+          </h2>
+          <a
+            class="text-xl dark:text-gray italic underline underline-offset-4"
+            href="/projects">See all</a
+          >
+        </div>
         <ProjectsWrapper projects={featureProjects} />
       </section>
     </Layout>
