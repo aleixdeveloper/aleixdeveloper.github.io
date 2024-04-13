@@ -7,28 +7,26 @@ const { name } = Astro.props as IHeroProps
 ---
 
 <section
-  class="text-stone-600 flex flex-col mt-10 gap-10 relative w-full dark:text-stone-300 font-extralight text-lg sm:text-2xl lg:text-3xl"
+	class="relative mt-10 flex w-full flex-col gap-10 text-lg text-stone-600 dark:text-stone-300 sm:text-2xl lg:text-3xl"
 >
-  <div class="flex flex-col xl:flex-row xl:gap-10 items-center h-3/5">
-    <div class="flex flex-col gap-10 w-full lg:w-2/3">
-      <p class="dark:text-stone-200">
-        Welcome to my virtual resume! My name is
-      </p>
+	<div class="flex h-3/5 flex-col items-center xl:flex-row xl:gap-10">
+		<div class="flex w-full flex-col gap-10 font-extralight md:font-light lg:w-2/3">
+			<p class="dark:text-stone-200">Welcome to my virtual resume! My name is</p>
 
-      <h1>{name}</h1>
-    </div>
-    <div class="aspect-square lg:w-1/3 h-96">
-      <HeroImage />
-    </div>
-  </div>
-  <div class="leading-relaxed mx-auto flex items-center text-3xl">
-    <Description />
-  </div>
+			<h1>{name}</h1>
+		</div>
+		<div class="aspect-square h-96 lg:w-1/3">
+			<HeroImage />
+		</div>
+	</div>
+	<div class="mx-auto flex items-center text-3xl leading-relaxed">
+		<Description />
+	</div>
 </section>
 
 <style>
-  section {
-    @apply max-w-6xl mx-auto px-4 md:px-6;
-    margin-bottom: 80px;
-  }
+	section {
+		@apply mx-auto max-w-6xl px-4 md:px-6;
+		margin-bottom: 80px;
+	}
 </style>
