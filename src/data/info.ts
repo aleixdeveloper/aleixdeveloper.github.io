@@ -1,3 +1,8 @@
+import wordleImg from "../assets/images/wordle/wordle.jpg"
+import musicBandImg from "../assets/images/fenok-store/fenok-store.jpg"
+import encyclopediaImg from "../assets/images/encyclopedia-tourist/encyclopedia.jpg"
+ 
+
 export const info = {
   baseUrl: "https://aleixdeveloper.github.io",
   name: "Aleix Clemente",
@@ -123,7 +128,7 @@ export const info = {
     {
       title: "Music band store",
       isFeatured: true,
-      thumbnail: "/assets/images/fenok-store/fenok-store.jpg",
+      thumbnail: musicBandImg,
       githubUrl:
         "https://github.com/aleixdeveloper/nextjs-ecommerce-tuto/tree/main",
       liveUrl: "https://fenokstore.vercel.app/",
@@ -131,14 +136,14 @@ export const info = {
     {
       title: "Map markers around the world",
       isFeatured: true,
-      thumbnail: "/assets/images/encyclopedia-tourist/encyclopedia.jpg",
+      thumbnail: encyclopediaImg,
       githubUrl: "",
       liveUrl: "",
     },
     {
       title: "Wordle for small competitions",
       isFeatured: true,
-      thumbnail: "/assets/images/wordle/wordle.jpg",
+      thumbnail: wordleImg,
       githubUrl: "",
       liveUrl: "",
     },
