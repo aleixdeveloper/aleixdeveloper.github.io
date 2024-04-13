@@ -18,6 +18,10 @@
       "@data": ["src/data/info"],
       "@utils": ["src/utils"],
       "@types": ["src/types"]
-    }
-  }
+    },
+    "types": ["astro/client"]
+  },
+  "exclude": [
+    "public"
+  ]
 }

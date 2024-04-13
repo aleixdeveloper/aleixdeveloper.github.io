@@ -1,9 +1,10 @@
 ---
 import { dictionary } from "src/data/stack";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 const { element } = Astro.props;
-const el = dictionary[element];
+const el: { name: string; img: string; value: number; color: string } =
+  dictionary[element];
 ---
 
 <div
@@ -17,7 +18,6 @@ const el = dictionary[element];
   >
     &#x2B22;
   </span>
-  <!--   <img src={el.img} class="absolute w-10/12" /> -->
   <Image
     src={el.img}
     class="absolute w-10/12 top-1/2 -translate-y-6 md:-translate-y-8 lg:-translate-y-9 xl:-translate-y-10 left-1/2 -translate-x-1/2"
@@ -31,7 +31,3 @@ const el = dictionary[element];
     {el.name}
   </p>
 </div>
-
-<style></style>
-<!--  w-[52.5px] md:w-[79px] lg:w-[105px]  -->
-<!-- text-[6em] md:text-[7em] lg:text-[8em] xl:text-[7em] -->
