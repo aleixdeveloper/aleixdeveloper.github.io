@@ -1,8 +1,9 @@
 ---
-import { IHeroProps } from "@types";
-import Description from "./Description.astro";
-import HeroImage from "./HeroImage.astro";
-const { name } = Astro.props as IHeroProps;
+import type { IHeroProps } from "@types"
+import Description from "./Description.astro"
+import HeroImage from "./HeroImage.astro"
+
+const { name } = Astro.props as IHeroProps
 ---
 
 <section

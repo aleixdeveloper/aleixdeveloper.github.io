@@ -1,10 +1,10 @@
 ---
-import { dictionary } from "src/data/stack";
-import { Image } from "astro:assets";
+import { dictionary } from "src/data/stack"
+import { Image } from "astro:assets"
 
-const { element } = Astro.props;
+const { element } = Astro.props
 const el: { name: string; img: string; value: number; color: string } =
-  dictionary[element];
+  dictionary[element]
 ---
 
 <div

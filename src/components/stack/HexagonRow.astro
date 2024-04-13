@@ -1,11 +1,11 @@
 ---
-import Hexagon from "./Hexagon.astro";
+import Hexagon from "./Hexagon.astro"
 
-const { category, techs, firstHalf } = Astro.props;
+const { category, techs, firstHalf } = Astro.props
 ---
 
 <div
-  class={`row h-[4.7em] flex ${
+  class:list={`row h-[4.7em] flex ${
     firstHalf ? "odd:ml-[2.6em]" : "justify-end even:mr-[2.6em]"
   }`}
 >

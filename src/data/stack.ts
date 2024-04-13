@@ -1,22 +1,22 @@
-import jsImg from "../assets/icons/DEV_TECHS/javascript.png";
-import tsImg from "../assets/icons/DEV_TECHS/ts.png";
-import nextImg from "../assets/icons/DEV_TECHS/nextjs.png";
-import astroImg from "../assets/icons/DEV_TECHS/astro.png";
-import reactImg from "../assets/icons/DEV_TECHS/react.png";
-import muiImg from "../assets/icons/DEV_TECHS/mui.png";
-import gitImg from "../assets/icons/DEV_TECHS/git.png";
-import chartjsImg from "../assets/icons/DEV_TECHS/chartjs.png";
-import strapiImg from "../assets/icons/DEV_TECHS/strapi.png";
-import mongoImg from "../assets/icons/DEV_TECHS/mongo.png";
-import eslintImg from "../assets/icons/DEV_TECHS/eslint.png";
-import rtlImg from "../assets/icons/DEV_TECHS/rtl.png";
-import tailwindImg from "../assets/icons/DEV_TECHS/tailwind.png";
-import figmaImg from "../assets/icons/DEV_TECHS/figma.png";
-import vitestImg from "../assets/icons/DEV_TECHS/vitest.png";
-import expoImg from "../assets/icons/DEV_TECHS/expo.png";
-import apexchartsImg from "../assets/icons/DEV_TECHS/apexcharts.png";
-import headlessuiImg from "../assets/icons/DEV_TECHS/headlessui.png";
-import nodeImg from "../assets/icons/DEV_TECHS/node.png";
+import jsImg from "../assets/icons/DEV_TECHS/javascript.png"
+import tsImg from "../assets/icons/DEV_TECHS/ts.png"
+import nextImg from "../assets/icons/DEV_TECHS/nextjs.png"
+import astroImg from "../assets/icons/DEV_TECHS/astro.png"
+import reactImg from "../assets/icons/DEV_TECHS/react.png"
+import muiImg from "../assets/icons/DEV_TECHS/mui.png"
+import gitImg from "../assets/icons/DEV_TECHS/git.png"
+import chartjsImg from "../assets/icons/DEV_TECHS/chartjs.png"
+import strapiImg from "../assets/icons/DEV_TECHS/strapi.png"
+import mongoImg from "../assets/icons/DEV_TECHS/mongo.png"
+import eslintImg from "../assets/icons/DEV_TECHS/eslint.png"
+import rtlImg from "../assets/icons/DEV_TECHS/rtl.png"
+import tailwindImg from "../assets/icons/DEV_TECHS/tailwind.png"
+import figmaImg from "../assets/icons/DEV_TECHS/figma.png"
+import vitestImg from "../assets/icons/DEV_TECHS/vitest.png"
+import expoImg from "../assets/icons/DEV_TECHS/expo.png"
+import apexchartsImg from "../assets/icons/DEV_TECHS/apexcharts.png"
+import headlessuiImg from "../assets/icons/DEV_TECHS/headlessui.png"
+import nodeImg from "../assets/icons/DEV_TECHS/node.png"
 
 export const dictionary = {
   js: { name: "JavaScript", img: jsImg, value: 10, color: "#111" },
@@ -70,4 +70,4 @@ export const dictionary = {
     color: "#111827",
   },
   node: { name: "Nodejs", img: nodeImg, value: 8, color: "#1a2545" },
-};
+}

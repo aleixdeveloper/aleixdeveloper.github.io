@@ -1,7 +1,6 @@
 import wordleImg from "../assets/images/wordle/wordle.jpg"
 import musicBandImg from "../assets/images/fenok-store/fenok-store.jpg"
 import encyclopediaImg from "../assets/images/encyclopedia-tourist/encyclopedia.jpg"
- 
 
 export const info = {
   baseUrl: "https://aleixdeveloper.github.io",
@@ -158,4 +157,4 @@ export const info = {
     { category: "Utils", tech: ["git", "eslint"] },
     { category: "Mobile", tech: ["expo"] },
   ],
-};
+}

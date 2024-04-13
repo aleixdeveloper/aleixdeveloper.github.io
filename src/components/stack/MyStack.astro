@@ -1,8 +1,8 @@
 ---
-import HexagonRow from "./HexagonRow.astro";
+import HexagonRow from "./HexagonRow.astro"
 
-const { stack } = Astro.props;
-const splitedArr = stack;
+const { stack } = Astro.props
+const splitedArr = stack
 ---
 
 <section
@@ -27,7 +27,7 @@ const splitedArr = stack;
               techs={row.tech}
               firstHalf={indx < Math.ceil(arr.length / 2)}
             />
-          );
+          )
         })
       }
     </div>

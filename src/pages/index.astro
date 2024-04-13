@@ -1,21 +1,20 @@
 ---
-import { info } from "@data";
+import { info } from "@data"
 
-import Layout from "@layouts/Layout.astro";
-import Hero from "@components/home/Hero.astro";
-import TopWave from "@components/home/TopWave.astro";
-import Experience from "@components/home/Experience.astro";
-import MyStack from "@components/stack/MyStack.astro";
-import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
-import MetaHead from "@components/general/MetaHead.astro";
-import BotWave from "@components/home/BotWave.astro";
-import Parallax from "@components/parallax/Parallax.astro";
+import Layout from "@layouts/Layout.astro"
+import Hero from "@components/home/Hero.astro"
+import TopWave from "@components/home/TopWave.astro"
+import Experience from "@components/home/Experience.astro"
+import MyStack from "@components/stack/MyStack.astro"
+import ProjectsWrapper from "@components/general/ProjectsWrapper.astro"
+import MetaHead from "@components/general/MetaHead.astro"
+import BotWave from "@components/home/BotWave.astro"
 
 const featureProjects = info.projects.map((project, index) => {
   if (project.isFeatured && index < 6) {
-    return project;
+    return project
   }
-});
+})
 ---
 
 <!DOCTYPE html>
