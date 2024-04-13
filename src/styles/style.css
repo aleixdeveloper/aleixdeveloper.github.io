@@ -73,8 +73,6 @@ body {
 	height: 70px;
 	position: relative;
 	background: url(/assets/images/logo-white.png) center / cover;
-	/*   -webkit-transition: background-image 0.2s ease-in-out;
-  transition: background-image 0.2s ease-in-out; */
 }
 
 html.dark #img-logo {
@@ -91,12 +89,12 @@ html.dark #img-logo {
 
 /* Track */
 ::-webkit-scrollbar-track {
-	@apply bg-transparent;
+	@apply bg-[#EEEDEC] dark:bg-[#1E1D22];
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	@apply rounded bg-zinc-400/50 dark:bg-zinc-200/10;
+	@apply rounded bg-zinc-800/20 dark:bg-zinc-300/10;
 	border-radius: 10px;
 	border: 4px solid transparent;
 	background-clip: padding-box;
