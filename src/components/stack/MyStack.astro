@@ -1,10 +1,8 @@
 ---
-import { sliceIntoChunks } from "@components/home/helper";
 import HexagonRow from "./HexagonRow.astro";
 
 const { stack } = Astro.props;
-const splitedArr =
-  stack; /* sliceIntoChunks(stack, [1, 2, 3, 3, 3, 2, 2, 2, 1]); */ //[2, 4, 5, 4, 3]
+const splitedArr = stack;
 ---
 
 <section
