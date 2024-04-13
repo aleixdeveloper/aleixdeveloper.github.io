@@ -5,36 +5,28 @@ const { stack } = Astro.props
 const splitedArr = stack
 ---
 
-<section
-  class="bg-cyan-900 flex w-full items-center justify-center flex-col dark:text-light"
->
-  <h2
-    class="self-start mb-1 ml-4 md:ml-0 dark:text-cyan-100 text-3xl font-bold"
-  >
-    My stack
-  </h2>
-  <div
-    class="md:rounded-xl w-full mx-auto mt-2 md:mt-6 py-1 md:px-1 lg:p-3 colorful-gradient"
-  >
-    <div
-      class="relative pb-5 flex flex-col justify-center flex-wrap content-center text-white md:rounded-lg"
-    >
-      {
-        splitedArr.map((row, indx, arr) => {
-          return (
-            <HexagonRow
-              category={row.category}
-              techs={row.tech}
-              firstHalf={indx < Math.ceil(arr.length / 2)}
-            />
-          )
-        })
-      }
-    </div>
-  </div>
+<section class="flex w-full flex-col items-center justify-center bg-cyan-900 dark:text-light">
+	<h2 class="mb-1 ml-4 self-start text-3xl font-bold text-cyan-100 md:ml-0">My stack</h2>
+	<div class="colorful-gradient mx-auto mt-2 w-full py-1 md:mt-6 md:rounded-xl md:px-1 lg:p-3">
+		<div
+			class="relative flex flex-col flex-wrap content-center justify-center pb-5 text-white md:rounded-lg"
+		>
+			{
+				splitedArr.map((row, indx, arr) => {
+					return (
+						<HexagonRow
+							category={row.category}
+							techs={row.tech}
+							firstHalf={indx < Math.ceil(arr.length / 2)}
+						/>
+					)
+				})
+			}
+		</div>
+	</div>
 </section>
 <style>
-  section {
-    @apply mx-auto px-0 md:px-10;
-  }
+	section {
+		@apply mx-auto px-0 md:px-10;
+	}
 </style>
