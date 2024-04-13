@@ -13,7 +13,6 @@ export default {
 	plugins: [
 		"prettier-plugin-astro",
 		"prettier-plugin-tailwindcss",
-		"prettier-plugin-astro-organize-imports",
 	],
 	overrides: [
 		{

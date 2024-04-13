@@ -1,12 +1,11 @@
 ---
 import Footer from "@components/general/Footer.astro"
 import Navbar from "@components/general/Navbar.astro"
-
 import "../styles/style.css"
 ---
 
 <Navbar />
-<main class="text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl font-light">
-  <slot />
+<main class="sm:text-md text-sm font-light md:text-lg lg:text-xl xl:text-2xl">
+	<slot />
 </main>
 <Footer />

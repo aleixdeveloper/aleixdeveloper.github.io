@@ -1,5 +1,3 @@
-process.env.ESLINT_TSCONFIG = "tsconfig.json"
-
 /**
  * @type {import("eslint").Linter.Config}
  */
@@ -13,7 +11,7 @@ module.exports = {
 		node: true,
 		browser: true,
 	},
-	extends: ["@antfu", "eslint-config-prettier"],
+	extends: ["eslint-config-prettier"],
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
 		ecmaVersion: "latest",
@@ -40,7 +38,7 @@ module.exports = {
 		"@stylistic/js/no-mixed-spaces-and-tabs": "off",
 		"no-unused-vars": "off",
 		"@typescript-eslint/no-unused-vars": "off",
-		"unused-imports/no-unused-imports": "warn",
+		"unused-imports/no-unused-imports": "off",
 		"object-curly-newline": [
 			"warn",
 			{
