@@ -1,14 +1,13 @@
 import wordleImg from "../assets/images/wordle/wordle.jpg"
 import musicBandImg from "../assets/images/fenok-store/fenok-store.jpg"
 import encyclopediaImg from "../assets/images/encyclopedia-tourist/encyclopedia.jpg"
+import { getI18N } from "@i18n"
 
-export const info = {
+export const info = (i18n) => ({
 	baseUrl: "https://aleixdeveloper.github.io",
 	name: "Aleix Clemente",
 	jobDescription: "Web Developer",
-	about: `A front-end engineer from Barcelona. I am currently learning Astro and Typescript, and expanding my knowledge of Nextjs. Apart from web development, my other passions are enduro, football and chess.
-  `,
-
+	about: i18n.HERO.DESCRIPTION,
 	experience: [
 		{
 			name: "OASYS, SL",
@@ -133,6 +132,13 @@ export const info = {
 		{ category: "Utils", tech: ["git", "eslint"] },
 		{ category: "Mobile", tech: ["expo"] },
 	],
+})
+
+export const getInfo = (locale) => {
+	console.log("locale", locale)
+	const i18n = getI18N({ currentLocale: locale })
+
+	return info(i18n)
 }
 
 export const projects = [

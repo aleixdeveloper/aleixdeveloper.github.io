@@ -1,11 +1,35 @@
 ---
 import Footer from "@components/general/Footer.astro"
+import MetaHead from "@components/general/MetaHead.astro"
 import Navbar from "@components/general/Navbar.astro"
-import "../styles/style.css"
+import { getLangFromUrl } from "../i18n/utils"
+
+interface Props {
+	description: string
+	title: string
+}
+
+const { description, title } = Astro.props
+const lang = getLangFromUrl(Astro.url)
+console.log("lang", lang)
 ---
 
-<Navbar />
-<main class="sm:text-md text-sm font-light md:text-lg lg:text-xl xl:text-2xl">
-	<slot />
-</main>
-<Footer />
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<MetaHead title={"Portfolio"} ogImageUrl={"/assets/images/profile.png"} />
+		<style>
+			section {
+				@apply mx-auto max-w-[1112px] sm:px-4 md:px-10;
+			}
+		</style>
+	</head>
+
+	<Navbar />
+	<main class="sm:text-md text-sm font-light md:text-lg lg:text-xl xl:text-2xl">
+		<slot />
+	</main>
+	<Footer />
+
+
+</html>

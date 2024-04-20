@@ -1,5 +1,5 @@
----
-import { info, projects } from "@data"
+<!-- ---
+import { getInfo, projects } from "@data"
 
 import ProjectsWrapper from "@components/general/ProjectsWrapper.astro"
 import BotWave from "@components/home/BotWave.astro"
@@ -9,6 +9,9 @@ import TopWave from "@components/home/TopWave.astro"
 import MyStack from "@components/stack/MyStack.astro"
 
 const featureProjects = projects.filter((project, index) => project.isFeatured && index < 6)
+const { currentLocale } = Astro
+
+const info = getInfo(currentLocale)
 ---
 
 <Hero name={info.name} about={info.about} />
@@ -42,3 +45,4 @@ const featureProjects = projects.filter((project, index) => project.isFeatured &
 	</div>
 	<ProjectsWrapper projects={featureProjects} />
 </section>
+ -->

@@ -1,5 +1,8 @@
 ---
-import { info } from "@data"
+import { getInfo } from "@data"
+
+const { currentLocale } = Astro
+const info = getInfo(currentLocale)
 ---
 
 <footer class="container mb-8 flex flex-col items-center justify-end gap-4 sm:mb-4">

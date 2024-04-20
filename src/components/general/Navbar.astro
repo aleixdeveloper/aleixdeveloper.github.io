@@ -1,5 +1,6 @@
 ---
 import ThemeIcon from "@components/theme/ThemeIcon.astro"
+import LanguageSelector from "@components/LanguageSelector.astro"
 
 const pathname = new URL(Astro.url).pathname
 const currentPath = pathname.slice(1) // remove the first "/"
@@ -16,4 +17,5 @@ const goto =
 		<a class="block text-lg dark:text-light" href={goto.to}>{goto.name}</a>
 		<ThemeIcon />
 	</nav>
+	<LanguageSelector />
 </header>

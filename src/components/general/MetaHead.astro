@@ -1,6 +1,10 @@
 ---
 import type { IMetaHead } from "@types"
-import { info } from "@data"
+
+import { getInfo } from "@data"
+
+const { currentLocale } = Astro
+const info = getInfo(currentLocale)
 
 const { title, description, ogImageUrl } = Astro.props as IMetaHead
 ---
