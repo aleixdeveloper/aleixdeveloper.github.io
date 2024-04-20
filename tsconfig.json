@@ -12,6 +12,7 @@
     // Astro will directly run your TypeScript code, no transpilation needed.
     "noEmit": true,
     "baseUrl": ".",
+    "allowJs": true,
     "paths": {
       "@layouts/*": ["src/layouts/*"],
       "@components/*": ["src/components/*"],
@@ -21,7 +22,5 @@
     },
     "types": ["astro/client"]
   },
-  "exclude": [
-    "public"
-  ]
+  "exclude": ["public"]
 }
