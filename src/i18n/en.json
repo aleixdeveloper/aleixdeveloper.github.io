@@ -1,146 +1,74 @@
 {
-  "SEO_TITLE_1": "ESLAND Awards",
-  "SEO_TITLE_2": "- Celebrating the Best of Streaming and Content Creation",
-  "SEO_DESCRIPTION": "Discover the top content creators from Spain, Latin America, and Andorra. Vote for your favorites and celebrate the innovation and talent on Twitch, YouTube, and more.",
-  "SEO": {
-    "ERROR_404_TITLE": "404 Page not found - ESLAND Awards",
-    "ERROR_404_DESCRIPTION": "Page not found (Error 404). Check the URL or explore our sections. Need help? Contact us."
-  },
-  "HEADER": {
-    "LOGO": "Return to the ESLAND Awards Homepage",
-    "PROJECTS": "Projects"
-  },
-  "HERO": {
-    "INTRODUCTION": "Welcome to my virtual resume! My name is",
-    "DESCRIPTION": "A front-end engineer from Barcelona \n. I am currently learning Astro and Typescript, and expanding my knowledge of Nextjs.\n Out of web development, my other passions are enduro enduro , football soccer  , chess chess  and bass bass "
-  },
-  "STACK": {
-    "TITLE": "My Stack",
-    "CATEGORIES": {
-      "DESIGN": "DESIGN",
-      "CHARTS": "CHARTS",
-      "UIFRAMEWORKS": "UI FRAMEWORKS",
-      "LANGUAGES": "LANGUAGES",
-      "FRAMEWORKS": "FRAMEWORKS",
-      "DATABASES": "DATABASES",
-      "UTILS": "UTILS",
-      "MOBIL": "MOBIL"
-    }
-  },
-  "EXPERIENCE": {
-    "TITLE": "EXPERIENCE",
-    "LIST": [
-      {
-        "TITLE": "OASYS, SL",
-        "START_DATE": "March 2021",
-        "END_DATE": "Present",
-        "LOCATION": "Barcelona",
-        "TASKS": [
-          "Front-End Developer. Building web-apps for several companies in the pharmaceutical and food industry",
-          "Working daily with React, Javascript, Semantic/Mui and apexcharts among other technologies"
-        ]
-      },
-      {
-        "TITLE": "",
-        "START_DATE": "",
-        "END_DATE": "",
-        "LOCATION": "",
-        "TASKS": [""]
-      },
-      {
-        "TITLE": "",
-        "START_DATE": "",
-        "END_DATE": "",
-        "LOCATION": "",
-        "TASKS": [""]
-      },
-      {
-        "TITLE": "",
-        "START_DATE": "",
-        "END_DATE": "",
-        "LOCATION": "",
-        "TASKS": [""]
-      }
-    ]
-  },
-  "HEADER_VOTE": "VOTE",
-  "HEADER_INFO": "INFORMATION",
-  "HEADER_ARCHIVE": "ARCHIVE",
-  "HEADER_BUTTON": "NOMINATION CRITERIA",
-  "HERO_SUBTITLE": "Awards for the Spanish-Speaking Streaming Community",
-  "INTRO_TITLE": "Welcome",
-  "INTRO_TITLE_AFTER_BR": "to the ESLAND Awards",
-  "INTRO_DESCRIPTION_1": "Cinema has the Oscars, music has the Grammys, and <strong>streaming has the ESLAND</strong>. These awards celebrate the creativity and talent of the best content creators in the Spanish-speaking community.",
-  "INTRO_DESCRIPTION_2": "Spain, Latin America, and Andorra are united by creators and their communities, to reminisce and relive <strong>some of the best moments of the year.</strong>",
-  "INTRO_DESCRIPTION_3": "After two successful galas, one at the Palau de la Música Catalana in Barcelona and another at the National Auditorium in Mexico City, we eagerly await <strong>the third edition in Andorra.</strong>",
-  "BENTO_TITLE_1": "Andorra: The Zenith of the ESLAND Awards",
-  "BENTO_CONTENT_1": "A new edition <strong>brimming with news</strong> and content, which will start several weeks before the much-anticipated gala. Expect <strong>special live performances, collaborations, concerts, and much more</strong> in what will be a real celebration of content creation.",
-  "BENTO_TITLE_2": "The White Carpet",
-  "BENTO_SUBTITLE_2": "February 16, 2024",
-  "BENTO_CONTENT_2": "This year, the blue carpet moment will be enhanced and replaced by a <strong>white carpet in the snow</strong>, set against the stunning Andorran landscapes, on the <strong>ski slopes of Andorra</strong>.",
-  "BENTO_TITLE_3": "The Gala",
-  "BENTO_SUBTITLE_3": "February 17, 2024",
-  "BENTO_CONTENT_3": "An awards ceremony filled with <strong>top-level content</strong> and <strong>many surprises</strong>, where the winners of the third edition of the ESLAND Awards will be revealed.",
-  "BENTO_TITLE_4": "Enjoy the Community Reddit",
-  "BENTO_CONTENT_4": "This year, Reddit will not be part of the awards voting, but it will <strong>be part of the community</strong>. The official ESLAND Awards subreddit is open to you. Share your clips, opinions, and <strong>interact with the entire Spanish-speaking streaming community</strong>.",
-  "VIDEO_ALT": "ESLAND - Awards for the Spanish-Speaking Streaming Community",
-  "VIDEO_BUTTON": "Vote Now",
-  "PREFOOTER_VIDEO_TITLE": "Guide to the 3rd Edition of the ESLAND Awards",
-  "ARCHIVO": {
-    "HERO_TITLE": "Past Editions",
-    "HERO_BUTTON": "Experience the Last Gala",
-    "COUNTER_TITLE": "The ESLANDs by the Numbers",
-    "COUNTER_VIEWS": "views",
-    "COUNTER_NEWS": "news articles in the press",
-    "COUNTER_MEDIA": "in earned media coverage"
-  },
-  "VOTE": {
-    "TITLE": "The Voting Is Open",
-    "CALL_TO_VOTE": "Start Voting Now!",
-    "INTRO_CONTENT": "The most crucial moment has arrived. <strong>Cast your vote in the 3rd Edition of the Awards</strong>. Here are some tips to ensure your votes are counted correctly:",
-    "ADVICE_1": "Vote for up to 4 nominees per category, <strong>in order of preference</strong>.",
-    "ADVICE_2": "<strong>You do not have to vote in every category.</strong>",
-    "ADVICE_3": "The use of ranked voting is not mandatory, but it is recommended.",
-    "ADVICE_4": "Once you've made your choices, <strong>be sure to click 'submit my votes.'</strong>",
-    "ADVICE_5": "<strong>Remember to share your votes</strong> on social media.",
-    "ADVICE_6": "Choose wisely and <strong>double-check your votes</strong>; you only get one chance.",
-    "TIME_LIMIT": "Voting will be open until Sunday, January 14, at 12:00 p.m. (Spanish time)",
-    "VOTES_CASTED": "Votes Submitted"
-  },
-  "CATEGORY": "Category",
-  "LOG_OUT": "Log Out",
-  "FOOTER": {
-    "DISCLAIMER": "All rights reserved. - This is not the official website, developed by @midudev for educational purposes.",
-    "LEGAL": {
-      "TITLE": "Legal",
-      "NOTICE": "Legal Notice",
-      "PRIVACY": "Privacy Policy",
-      "COOKIES": "Cookie Policy",
-      "PRIVACY_POLICY": "Privacy Policy",
-      "TOS": "Terms of Service"
-    },
-    "WEB_MAP": {
-      "TITLE": "Site Map",
-      "HOME": "Home",
-      "INFO": "Information",
-      "ARCHIVE": "Archive"
-    },
-    "PRODUCED_BY": "Produced by"
-  },
-  "INFO_TITLE": "ESLAND Awards",
-  "INFO_TITLE_1": "Unique Recognition for Creators and Communities",
-  "INFO_CONTENT_1_1": "The ESLAND Awards are a private initiative promoted by the famous streamer TheGrefg, aiming to support and recognize content creation in the Spanish-speaking sphere.",
-  "INFO_CONTENT_1_2": "ESLAND is an acronym for SPAIN, LATIN AMERICA, AND ANDORRA, three regions that share a common language that unites them beyond any physical or virtual borders.",
-  "INFO_TITLE_2": "THE CREATION AWARD",
-  "INFO_CONTENT_2_1": "The trophy presented to the winners at the ceremony is <strong>a representation of the letter 'A' divided into three fragments</strong>, assembled as a futuristic gadget that builds the narrative of the event.",
-  "INFO_CONTENT_2_2": "It's an artifact of unknown origin that provides <strong>tools and abilities for creation</strong>. It symbolizes the emancipation of talent through technology and the rise of content creators in the entertainment world.",
-  "MEDIA_KIT_TITLE": "PRESS KIT",
-  "MEDIA_KIT_SUBTITLE_1": "LOGO AND TROPHY",
-  "MEDIA_KIT_SUBTITLE_2": "WALLPAPERS",
-  "MEDIA_KIT_SUBTITLE_3": "PRESS RELEASE",
-  "DOWNLOAD_BUTTON": "DOWNLOAD NOW",
-  "ERROR_404": {
-    "TITLE": "Page not found",
-    "BACK_HOMEPAGE_BTN": "Back to homepage"
+ "HEADER": {
+  "LOGO": "",
+  "PROJECTS": "Projects"
+ },
+ "HERO": {
+  "INTRODUCTION": "Welcome to my virtual resume! My name is",
+  "DESCRIPTION_1": "I'm a front-end developer from Barcelona \n. I am currently learning Astro and Bun, and expanding my knowledge of Nextjs.\n Out of web development, my other passions are",
+  "DESCRIPTION_2": "enduro",
+  "DESCRIPTION_3": "football",
+  "DESCRIPTION_4": "chess",
+  "DESCRIPTION_5": "and bass"
+ },
+ "STACK": {
+  "TITLE": "My Stack",
+  "CATEGORIES": {
+   "design": "DESIGN",
+   "charts": "CHARTS",
+   "uiframeworks": "UI FRAMEWORKS",
+   "languages": "LANGUAGES",
+   "frameworks": "FRAMEWORKS",
+   "databases": "DATABASES",
+   "utils": "UTILS",
+   "mobile": "MOBIL"
   }
+ },
+ "EXPERIENCE": {
+  "TITLE": "EXPERIENCE",
+  "LIST": [
+   {
+    "TITLE": "KNOWMAD MOOD",
+    "START_DATE": "April 2023",
+    "END_DATE": "Present",
+    "LOCATION": "Madrid",
+    "TASKS": [
+     "Create digital banking interfaces"
+    ]
+   },
+   {
+    "TITLE": "OASYS, SL",
+    "START_DATE": "March 2021",
+    "END_DATE": "April 2023",
+    "LOCATION": "Barcelona",
+    "TASKS": [
+     "Front-End Developer. Building web-apps for several companies in the pharmaceutical and food industry",
+     "Working daily with React, Javascript, Semantic/Mui and apexcharts among other technologies"
+    ]
+   },
+   {
+    "TITLE": "DECATHLON SPAIN, S.A.",
+    "START_DATE": "2018",
+    "END_DATE": "2020",
+    "LOCATION": "El Prat de Llobregat",
+    "TASKS": [
+     "Logistics Operator and IT Technician",
+     "(Hardware, network, scripting...)",
+     "Small dashboard website built with PHP"
+    ]
+   },
+   {
+    "TITLE": "Non technical jobs",
+    "LOCATION": "Barcelona and surroundings",
+    "START_DATE": "2012",
+    "END_DATE": "2016",
+    "TASKS": [
+     "Warehouse waiter at Mercabarna",
+     "Soccer coach in lower categories",
+     "After-school activity monitor of sports initiation",
+     "Offset printing operator"
+    ]
+   }
+  ]
+ }
 }

@@ -1,24 +1,24 @@
-/* import SpainFlag from "@components/flags/Es"
-import AndorraFlag from "@components/flags/Cat"
-import UnitedStatesFlag from "@components/flags/En" */
 
-import Cat from "@components/flags/Cat.astro"
-import Es from "@components/flags/Es.astro"
-import En from "@components/flags/En.astro"
+import Cat from "@/components/flags/Cat.astro"
+import Es from "@/components/flags/Es.astro"
+import En from "@/components/flags/En.astro"
 
 // Add missing imports
-export const LANGUAGES: Record<string, { code: string; name: string; flag: typeof SpainFlag }> = {
+export const LANGUAGES: Record<string, { code: string; name: string; symbol: string; flag: typeof SpainFlag }> = {
 	ca: {
+		symbol: "🇨🇦",
 		code: "ca",
 		name: "Català",
 		flag: Cat,
 	},
 	en: {
+		symbol: "🇪🇳",
 		code: "en",
 		name: "English",
 		flag: En,
 	},
 	es: {
+		symbol: "🇪🇸",
 		code: "es",
 		name: "Español",
 		flag: Es,

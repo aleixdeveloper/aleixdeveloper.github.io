@@ -1,16 +1,54 @@
 ---
-import { getI18N } from "@i18n"
-import Layout from "@layouts/Layout.astro"
-import Intro from "../Intro.astro"
+import { getI18N } from "@/i18n"
+import Layout from "@/layouts/Layout.astro"
+import { info, projects } from "@/data/info"
+import ProjectsWrapper from "@/components/general/ProjectsWrapper.astro"
+import BotWave from "@/components/home/BotWave.astro"
+import Experience from "@/components/home/Experience.astro"
+import Hero from "@/components/home/Hero.astro"
+import TopWave from "@/components/home/TopWave.astro"
+import MyStack from "@/components/stack/MyStack.astro"
 
 const { currentLocale } = Astro
-console.log("currentLocale2", currentLocale)
+
 const i18n = getI18N({ currentLocale })
+
+const featureProjects = projects.filter((project, index) => project.isFeatured && index < 6)
 ---
 
 <Layout
 	title=`${i18n.SEO_TITLE_1} ${new Date().getFullYear()} ${i18n.SEO_TITLE_2}`
 	description={i18n.SEO_DESCRIPTION}
 >
-	<Intro />
+	<Hero name={info.name} about={info.about} />
+
+	<div class="max-h-[340px] w-full">
+		<TopWave />
+	</div>
+
+	<MyStack title={i18n.STACK.TITLE} stack={info.stack} />
+	<div class="h-32 w-full md:mb-32">
+		<BotWave />
+	</div>
+
+	<div class="z-20">
+		<Experience title={i18n.EXPERIENCE.TITLE} details={i18n.EXPERIENCE.LIST} />
+		<!-- 	<Experience title={"EDUCATION"} details={info.education} />
+		<Experience title={"VOLUNTEERING"} details={info.volunteering} />
+		<Experience title={"LANGUAGES"} details={info.languages} />
+		<Experience title={"ADD-ONS"} details={info.addOns} /> -->
+	</div>
+	<section>
+		<div class="flex items-end justify-between">
+			<h2
+				class="ml-3 mt-16 border-b text-2xl font-bold text-zinc-600/50 dark:text-zinc-300/50 sm:ml-0 sm:border-none sm:text-xl"
+			>
+				FEATURE PROJECTS
+			</h2>
+			<a class="text-xl italic underline underline-offset-4 dark:text-gray" href="/projects"
+				>See all</a
+			>
+		</div>
+		<ProjectsWrapper projects={featureProjects} />
+	</section>
 </Layout>

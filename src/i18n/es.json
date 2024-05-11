@@ -1,96 +1,74 @@
 {
-  "SEO_TITLE_1": "Premios ESLAND",
-  "SEO_TITLE_2": "- Celebrando lo mejor del streaming y los creadores de contenido",
-  "SEO_DESCRIPTION": "Descubre a los mejores creadores de contenido de España, Latinoamérica y Andorra. ¡Vota por tus favoritos! Celebra la innovación y el talento de Twitch, YouTube y más",
-  "SEO": {
-    "ERROR_404_TITLE": "404 Página no encontrada - Premios ESLAND",
-    "ERROR_404_DESCRIPTION": "Página no encontrada (Error 404). Verifica la URL o explora nuestras secciones. ¿Necesitas ayuda? Contáctenos."
-  },
-  "HEADER": {
-    "LOGO": "Volver a la página de inicio de los Premios ESLAND"
-  },
-  "HERO": {
-    "INTRODUCTION": "Bienvenido",
-    "DESCRIPTION": "Un desarrollador"
-  },
-  "HEADER_VOTE": "VOTA",
-  "HEADER_INFO": "INFO",
-  "HEADER_ARCHIVE": "ARCHIVO",
-  "HEADER_BUTTON": "CRITERIOS DE NOMINACIÓN",
-  "HERO_SUBTITLE": "Premios a la Comunidad Hispanohablante de Streaming",
-  "INTRO_TITLE": "Bienvenidos/as",
-  "INTRO_TITLE_AFTER_BR": "a los Premios ESLAND",
-  "INTRO_DESCRIPTION_1": "El cine tiene los Oscars, la música tiene los Grammy y <strong>el streaming tiene los ESLAND</strong>. Los premios que celebran la creatividad y el talento de los mejores creadores de contenido de <strong>la comunidad hispanohablante</strong>",
-  "INTRO_DESCRIPTION_2": "España, Latinoamérica y Andorra unidas por creadores, creadoras y sus comunidades, para recordar y revivir <strong>algunos de los mejores momentos del año.</strong>",
-  "INTRO_DESCRIPTION_3": "Tras dos galas celebradas, una en el Palau de la Música Catalana de Barcelona, y otra en el Auditorio Nacional de la Ciudad de México, solo queda esperar a <strong>la tercera edición en Andorra.</strong>",
-  "BENTO_TITLE_1": "Andorra: el cénit de los premios ESLAND",
-  "BENTO_CONTENT_1": "Una nueva edición <strong>cargada de novedades</strong> y contenido, que empezará varias semanas antes de la ansiada gala. <strong> Directos especiales, colaboraciones, conciertos y mucho más</strong> en lo que será una auténtica fiesta dedicada a la creación de contenido.",
-  "BENTO_TITLE_2": "La alfombra blanca",
-  "BENTO_SUBTITLE_2": "16 de febrero de 2024",
-  "BENTO_CONTENT_2": "Este año, el momento de la alfombra azul será sustituido y mejorado, gracias a los increíbles paisajes andorranos, por una <strong> alfombra blanca en plena nieve</strong>, situada en las <strong>pistas de esquí de Andorra</strong>.",
-  "BENTO_TITLE_3": "La gala",
-  "BENTO_SUBTITLE_3": "17 de febrero de 2024",
-  "BENTO_CONTENT_3": "Una gala de premios llena de <strong>contenido de primer nivel</strong> y <strong>muchas sorpresas</strong>, en la que descubrirán los ganadores de esta tercera edición de los Premios ESLAND.",
-  "BENTO_TITLE_4": "Disfruta del Reddit de la comunidad",
-  "BENTO_CONTENT_4": "Este año, el reddit no formará parte de las votaciones de los premios, pero sí que <strong>formará parte de la comunidad</strong>. El subreddit oficial de los Premios ESLAND está abierto para ti. Comparte tus clips, opiniones e <strong>interactúa con toda la comunidad</strong> del streaming hispanohablante.",
-  "VIDEO_ALT": "ESLAND - Premios a la comunidad hispanohablante de Streaming",
-  "VIDEO_BUTTON": "Vota",
-  "PREFOOTER_VIDEO_TITLE": "Guía de la 3ª Edición de los premios ESLAND",
-  "ARCHIVO": {
-    "HERO_TITLE": "Ediciones anteriores",
-    "HERO_BUTTON": "Revive la última gala",
-    "COUNTER_TITLE": "Los ESLAND en números",
-    "COUNTER_VIEWS": "de visualizaciones",
-    "COUNTER_NEWS": "noticias en prensa",
-    "COUNTER_MEDIA": "en medios ganados"
-  },
-  "VOTE": {
-    "TITLE": "Las votaciones ya están aquí",
-    "CALL_TO_VOTE": "¡Empezar con las votaciones!",
-    "INTRO_CONTENT": "Ha llegado el momento más importante. <strong>Votar en la 3ª Edición de los Premios </strong>. Para que tus votos se contabilicen de forma correcta, te dejamos algunos consejos:",
-    "ADVICE_1": "Vota, <strong>por orden de preferencia</strong>, hasta 4 nominados por categoría.",
-    "ADVICE_2": "<strong>No es obligatorio votar en cada categoría.</strong>",
-    "ADVICE_3": "No es obligatorio pero sí recomendable el <strong>uso del voto rankeado</strong>.",
-    "ADVICE_4": "Una vez tengas clara tu elección, <strong>asegúrate de pulsar “enviar mis votos”.</strong>",
-    "ADVICE_5": "<strong>Recuerda compartir tus votos</strong> en redes sociales.",
-    "ADVICE_6": "Elige sabiamente y <strong>revisa tus votos</strong>, solo tienes una oportunidad.",
-    "TIME_LIMIT": "Las votaciones estarán abiertas hasta el domingo 14 de enero a las 24:00h (hora española)",
-    "VOTES_CASTED": "Votos realizados"
-  },
-  "CATEGORY": "Categoría",
-  "LOG_OUT": "Cerrar sesión",
-  "FOOTER": {
-    "DISCLAIMER": "Todos los derechos reservados. - Esta no es la web oficial, desarrollada por @midudev para fines educativos",
-    "LEGAL": {
-      "TITLE": "Legal",
-      "NOTICE": "Aviso Legal",
-      "PRIVACY": "Privacidad",
-      "COOKIES": "Cookies",
-      "PRIVACY_POLICY": "Política de Privacidad",
-      "TOS": "Términos y Condiciones"
-    },
-    "WEB_MAP": {
-      "TITLE": "Mapa Web",
-      "HOME": "Inicio",
-      "INFO": "Info",
-      "ARCHIVE": "Archivo"
-    },
-    "PRODUCED_BY": "Producido por"
-  },
-  "INFO_TITLE": "Los premios ESLAND",
-  "INFO_TITLE_1": "Un reconocimiento único para creadores, creadoras y comunidades",
-  "INFO_CONTENT_1_1": "Los Premios ESLAND son una iniciativa privada promovida por el célebre streamer TheGrefg y buscan apoyar y reconocer la creación de contenido en el ámbito hispanohablante.",
-  "INFO_CONTENT_1_2": "ESLAND es el acrónimo de ESPAÑA, LATINOAMÉRICA Y ANDORRA, tres localizaciones geográficas que comparten el idioma que las une más allá de cualquier frontera, ya sea física o virtual.",
-  "INFO_TITLE_2": "EL PREMIO A LA CREACIÓN",
-  "INFO_CONTENT_2_1": "El trofeo que se entrega a los ganadores y ganadoras en la ceremonia es <strong>una representación de la letra “A” dividida en tres fragmentos</strong> y ensambladas a modo de artilugio futurista sobre el que se construye la narrativa del evento.",
-  "INFO_CONTENT_2_2": "Un artefacto de origen desconocido que dota de <strong>herramientas y habilidades para la creación.</strong> Una metáfora sobre la emancipación del talento gracias a la tecnología y la irrupción de los creadores de contenido en el mundo del entretenimiento.",
-  "MEDIA_KIT_TITLE": "KIT DE PRENSA",
-  "MEDIA_KIT_SUBTITLE_1": "LOGOTIPO Y TROFEO",
-  "MEDIA_KIT_SUBTITLE_2": "FONDOS DE PANTALLA",
-  "MEDIA_KIT_SUBTITLE_3": "NOTA DE PRENSA",
-  "DOWNLOAD_BUTTON": "DESCARGAR",
-  "ERROR_404": {
-    "TITLE": "Página no encontrada",
-    "BACK_HOMEPAGE_BTN": "Volver a la página de inicio"
+ "HEADER": {
+  "LOGO": "",
+  "PROJECTS": "Proyectos"
+ },
+ "HERO": {
+  "INTRODUCTION": "¡Bienvenido a mi curriculum virtual! Mi nombre es",
+  "DESCRIPTION_1": "Soy un desarrollador front-end de Barcelona. \n Actualmente estoy aprendiendo Astro y Bun, y ampliando mis conocimientos de Nextjs. Fuera del desarrollo web, mis otras pasiones son",
+  "DESCRIPTION_2": "el enduro",
+  "DESCRIPTION_3": "el futbol",
+  "DESCRIPTION_4": "el ajedrez",
+  "DESCRIPTION_5": "y el bajo"
+ },
+ "STACK": {
+  "TITLE": "Mi Stack",
+  "CATEGORIES": {
+   "design": "DISEÑO",
+   "charts": "GRÁFICOS",
+   "uiframeworks": "FRAMEWORKS DE UI",
+   "languages": "LENGUAJES",
+   "frameworks": "FRAMEWORKS",
+   "databases": "BASES DE DATOS",
+   "utils": "UTILIDADES",
+   "mobile": "MÓVIL"
   }
+ },
+ "EXPERIENCE": {
+  "TITLE": "EXPERIENCIA",
+  "LIST": [
+   {
+    "TITLE": "KNOWMAD MOOD",
+    "START_DATE": "Abril 2023",
+    "END_DATE": "Actualmente",
+    "LOCATION": "Madrid",
+    "TASKS": [
+     "Crear interfaces de banca digital"
+    ]
+   },
+   {
+    "TITLE": "OASYS, SL",
+    "START_DATE": "Marzo 2021",
+    "END_DATE": "Abril 2023",
+    "LOCATION": "Barcelona",
+    "TASKS": [
+     "Creación de aplicaciones web para varias empresas de la industria farmacéutica y alimentaria",
+     "Trabajando diariamente con React, Javascript, Semantic/Mui y apexcharts entre otras tecnologías"
+    ]
+   },
+   {
+    "TITLE": "DECATHLON ESPAÑA, S.A.",
+    "START_DATE": "2018",
+    "END_DATE": "2020",
+    "LOCATION": "El Prat de Llobregat",
+    "TASKS": [
+     "Operador Logístico y Técnico Informático",
+     "(Hardware, red, scripting...)",
+     "Gestión de un pequeño web creado con PHP"
+    ]
+   },
+   {
+    "TITLE": "Trabajos no técnicos",
+    "LOCATION": "Barcelona and surroundings",
+    "START_DATE": "2012",
+    "END_DATE": "2016",
+    "TASKS": [
+     "Camarero de almacén en Mercabarna",
+     "Entrenador de fútbol de categorías inferiores",
+     "Monitor de actividad extraescolar de iniciación deportiva",
+     "Operador de impresión offset"
+    ]
+   }
+  ]
+ }
 }

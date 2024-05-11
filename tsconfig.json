@@ -15,12 +15,13 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@layouts/*": ["src/layouts/*"],
-      "@components/*": ["src/components/*"],
-      "@data": ["src/data/info"],
-      "@utils": ["src/utils"],
-      "@types": ["src/types"],
-      "@i18n": ["src/i18n"]
+      /*  "@/layouts/*": ["src/layouts/*"],
+      "@/components/*": ["src/components/*"],
+      "@/data": ["src/data/info"],
+      "@/utils": ["src/utils"],
+      "@/types": ["src/types"],
+      "@/i18n": ["src/i18n"] */
+      "@/*": ["src/*"]
     },
     "types": ["astro/client"]
   },

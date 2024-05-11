@@ -1,14 +1,14 @@
 import wordleImg from "../assets/images/wordle/wordle.jpg"
 import musicBandImg from "../assets/images/fenok-store/fenok-store.jpg"
 import encyclopediaImg from "../assets/images/encyclopedia-tourist/encyclopedia.jpg"
-import { getI18N } from "@i18n"
+import { getI18N } from "@/i18n"
 
-export const info = (i18n) => ({
+export const info = {
 	baseUrl: "https://aleixdeveloper.github.io",
 	name: "Aleix Clemente",
 	jobDescription: "Web Developer",
-	about: i18n.HERO.DESCRIPTION,
-	experience: [
+	about: "about",
+	/* 	experience: [
 		{
 			name: "OASYS, SL",
 			location: "Barcelona",
@@ -45,7 +45,7 @@ export const info = (i18n) => ({
 				"- Offset printing operator",
 			],
 		},
-	],
+	], */
 
 	volunteering: [
 		{
@@ -121,24 +121,16 @@ export const info = (i18n) => ({
 		linkedin: "https://www.linkedin.com/in/aleixclemente/",
 		instagram: "https://www.instagram.com/aleeiixxx/",
 	},
-
-	stack: [
-		{ category: "Design", tech: ["figma"] },
-		{ category: "Charts", tech: ["chartjs", "apexcharts"] },
-		{ category: "UI frameworks", tech: ["tailwindcss", "mui", "headlessui"] },
-		{ category: "Languages", tech: ["js", "ts", "node"] },
-		{ category: "Frameworks", tech: ["react", "next", "astro"] },
-		{ category: "Databases", tech: ["mongodb", "strapi"] },
-		{ category: "Utils", tech: ["git", "eslint"] },
-		{ category: "Mobile", tech: ["expo"] },
-	],
-})
-
-export const getInfo = (locale) => {
-	console.log("locale", locale)
-	const i18n = getI18N({ currentLocale: locale })
-
-	return info(i18n)
+	stack: {
+		design: ["figma"],
+		charts: ["chartjs", "apexcharts"],
+		uiframeworks: ["tailwindcss", "mui", "headlessui"],
+		languages: ["js", "ts", "node"],
+		frameworks: ["react", "next", "astro"],
+		databases: ["mongodb", "strapi"],
+		utils: ["git", "eslint"],
+		mobile: ["expo"],
+	},
 }
 
 export const projects = [

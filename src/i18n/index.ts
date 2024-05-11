@@ -8,8 +8,8 @@ const LANG = {
 	SPANISH: "es",
 }
 
-export const getI18N = ({ currentLocale = "es" }: { currentLocale: string | undefined }) => {
-	if (currentLocale === LANG.CATALAN) return { ...spanish, ...catalan }
-	if (currentLocale === LANG.ENGLISH) return { ...spanish, ...english }
-	return spanish
+export const getI18N = ({ currentLocale = "en" }: { currentLocale: string | undefined }) => {
+	if (currentLocale === LANG.CATALAN) return { ...english, ...catalan }
+	if (currentLocale === LANG.SPANISH) return { ...english, ...spanish }
+	return english
 }
