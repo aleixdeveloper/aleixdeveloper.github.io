@@ -1,0 +1,19 @@
+---
+const {
+	to,
+	classes,
+} =
+	Astro.props
+---
+
+<a
+	class={[
+		"hover-underline-animation",
+		classes,
+	].join(
+		" "
+	)}
+	href={to}
+	><slot
+	/></a
+>

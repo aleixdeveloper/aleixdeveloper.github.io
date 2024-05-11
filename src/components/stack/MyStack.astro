@@ -1,6 +1,8 @@
 ---
 import { getI18N } from "@/i18n"
 import HexagonRow from "./HexagonRow.astro"
+import Title from "../layout/Title.astro"
+import Section from "../layout/Section.astro"
 
 const {
 	title,
@@ -20,14 +22,14 @@ const i18n =
 	)
 ---
 
-<section
-	class="-mt-1 flex w-full flex-col items-center justify-center bg-cyan-900 pt-1 dark:text-light">
-	<h2
-		class="mb-1 ml-4 self-start text-3xl font-bold text-cyan-100 md:ml-0">
-		{
-			title
-		}
-	</h2>
+<Section
+	id="techs"
+	title={{
+		text:
+			title,
+		color:
+			"cyan",
+	}}>
 	<div
 		class="colorful-gradient mx-auto mt-2 w-full py-1 md:mt-6 md:rounded-xl md:px-1 lg:p-3">
 		<div
@@ -70,7 +72,8 @@ const i18n =
 			}
 		</div>
 	</div>
-</section>
+</Section>
+
 <style
 >
 	section {

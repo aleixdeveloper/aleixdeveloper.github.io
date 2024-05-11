@@ -16,10 +16,10 @@
   "CATEGORIES": {
    "design": "DISSENY",
    "charts": "GRÀFICS",
-   "uiframewrks": "FRAMEWORKS D'UI",
-   "language": "LLENGUATGES",
-   "framewors": "FRAMEWORKS",
-   "database": "BASES DE DADES",
+   "uiframeworks": "FRAMEWORKS D'UI",
+   "languages": "LLENGUATGES",
+   "frameworks": "FRAMEWORKS",
+   "databases": "BASES DE DADES",
    "utils": "UTILITATS",
    "mobile": "MÒBIL"
   }
@@ -59,7 +59,7 @@
    },
    {
     "TITLE": "Trabajos no técnicos",
-    "LOCATION": "Barcelona and surroundings",
+    "LOCATION": "Barcelona i voltants",
     "START_DATE": "2012",
     "END_DATE": "2016",
     "TASKS": [
@@ -70,5 +70,9 @@
     ]
    }
   ]
- }
+ },
+ "PROJECTS": {
+  "TITLE": "PROJECTES DESTACATS"
+ },
+ "SEE_ALL": "Veure tots"
 }

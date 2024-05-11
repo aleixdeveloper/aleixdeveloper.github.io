@@ -5,6 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+	scroll-behavior: smooth;
+}
 html,
 body {
 	overflow-y: overlay;
@@ -113,3 +116,28 @@ html.dark #img-logo {
 ::-webkit-scrollbar-thumb:hover {
 	@apply bg-zinc-400;
 }
+
+/* HOVER UNDERLINE ANIMATION */
+.hover-underline-animation {
+	@apply text-gallery-800 dark:text-shark-300;
+	display: inline-block;
+	position: relative;
+  }
+  
+  .hover-underline-animation::after {
+	@apply bg-gallery-500 dark:bg-shark-300;
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+  }

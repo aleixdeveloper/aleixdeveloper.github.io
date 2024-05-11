@@ -59,7 +59,7 @@
    },
    {
     "TITLE": "Trabajos no técnicos",
-    "LOCATION": "Barcelona and surroundings",
+    "LOCATION": "Barcelona i alrededores",
     "START_DATE": "2012",
     "END_DATE": "2016",
     "TASKS": [
@@ -70,5 +70,9 @@
     ]
    }
   ]
- }
+ },
+ "PROJECTS": {
+  "TITLE": "PROYECTOS DESTACADOS"
+ },
+ "SEE_ALL": "Ver todos"
 }

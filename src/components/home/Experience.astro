@@ -1,44 +1,96 @@
 ---
 import Parallax from "@/components/parallax/Parallax.astro"
+import { getI18N } from "@/i18n"
+import Section from "../layout/Section.astro"
 
-const { title, details } = Astro.props
+const {
+	title,
+	details,
+} =
+	Astro.props
+const {
+	currentLocale,
+} =
+	Astro
+const i18n =
+	getI18N(
+		{
+			currentLocale,
+		}
+	)
 ---
 
-<section class="flex flex-col items-start justify-between dark:text-light sm:flex-row">
-	<h2
-		class="z-30 mt-16 w-[15rem] border-b text-2xl font-bold text-zinc-600/50 dark:text-zinc-300/50 sm:border-none sm:text-xl"
-	>
-		{title}
-	</h2>
-	<div class="w-full">
+<Section
+	id="experience"
+	title={{
+		text:
+			i18n
+				.EXPERIENCE
+				.TITLE,
+	}}>
+	<div
+		class="w-full pl-10">
 		{
-			details.map((item) => (
-				<a href={item.link} target="_blank">
-					<Parallax direction="left">
-						<div class="my-16 text-stone-700 dark:text-stone-200">
-							<div class="flex flex-wrap items-center justify-between">
-								<h3 class="text-xl font-semibold">{item.TITLE}</h3>
-								{(item.START_DATE || item.END_DATE) && (
-									<p class="text-sm dark:text-gray">
-										{item.START_DATE} - {item.END_DATE}
-									</p>
-								)}
+			details.map(
+				(
+					item
+				) => (
+					<a
+						href={
+							item.link
+						}
+						target="_blank">
+						<Parallax direction="left">
+							<div class="my-16 text-gray-700 dark:text-gray-200">
+								<div class="flex flex-wrap items-center justify-between">
+									<h3 class="text-xl font-semibold">
+										{
+											item.TITLE
+										}
+									</h3>
+									{(item.START_DATE ||
+										item.END_DATE) && (
+										<p class="dark:text-gray text-base text-gray-100">
+											{
+												item.START_DATE
+											}{" "}
+											-{" "}
+											{
+												item.END_DATE
+											}
+										</p>
+									)}
+								</div>
+								<p class="mt-3 text-rose-700 dark:text-teal-400">
+									{
+										item.LOCATION
+									}
+								</p>
+								<ul class="mt-3 text-lg">
+									{item.TASKS.map(
+										(
+											item
+										) => (
+											<li class="mb-2 text-gray-600 dark:text-gray-200">
+												-{" "}
+												{
+													item
+												}
+											</li>
+										)
+									)}
+								</ul>
 							</div>
-							<p class="mt-3 text-rose-700 dark:text-teal-400">{item.LOCATION}</p>
-							<ul class="mt-3 text-base">
-								{item.TASKS.map((item) => (
-									<li class="mb-2 dark:text-gray">- {item}</li>
-								))}
-							</ul>
-						</div>
-					</Parallax>
-				</a>
-			))
+						</Parallax>
+					</a>
+				)
+			)
 		}
 	</div>
-</section>
+</Section>
 
-<style>
+<style
+>
 	section {
 		@apply mx-auto max-w-[1112px] px-4 md:px-10;
 	}

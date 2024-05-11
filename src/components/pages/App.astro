@@ -11,6 +11,7 @@ import Experience from "@/components/home/Experience.astro"
 import Hero from "@/components/home/Hero.astro"
 import TopWave from "@/components/home/TopWave.astro"
 import MyStack from "@/components/stack/MyStack.astro"
+import Section from "../layout/Section.astro"
 
 const {
 	currentLocale,
@@ -45,56 +46,52 @@ const featureProjects =
 	/>
 
 	<div
-		class="max-h-[340px] w-full">
+		class="-mb-1 max-h-[340px] w-full">
 		<TopWave
 		/>
 	</div>
-
-	<MyStack
-		title={i18n
-			.STACK
-			.TITLE}
-		stack={info.stack}
-	/>
+	<div
+		class="bg-cyan-900">
+		<MyStack
+			title={i18n
+				.STACK
+				.TITLE}
+			stack={info.stack}
+		/>
+	</div>
 	<div
 		class="h-32 w-full md:mb-32">
 		<BotWave
 		/>
 	</div>
 
-	<div
-		class="z-20">
-		<Experience
-			title={i18n
-				.EXPERIENCE
-				.TITLE}
-			details={i18n
-				.EXPERIENCE
-				.LIST}
-		/>
-		<!-- 	<Experience title={"EDUCATION"} details={info.education} />
+	<Experience
+		title={i18n
+			.EXPERIENCE
+			.TITLE}
+		details={i18n
+			.EXPERIENCE
+			.LIST}
+	/>
+	<!-- 	<Experience title={"EDUCATION"} details={info.education} />
 		<Experience title={"VOLUNTEERING"} details={info.volunteering} />
 		<Experience title={"LANGUAGES"} details={info.languages} />
 		<Experience title={"ADD-ONS"} details={info.addOns} /> -->
-	</div>
-	<section
-		class="px-4">
-		<div
-			class="flex items-end justify-between">
-			<h2
-				class="ml-3 mt-16 border-b text-2xl font-bold text-zinc-600/50 dark:text-zinc-300/50 sm:ml-0 sm:border-none sm:text-xl">
-				FEATURE
-				PROJECTS
-			</h2>
-			<a
-				class="dark:text-gray text-xl italic underline underline-offset-4"
-				href="/projects"
-				>See
-				all</a
-			>
-		</div>
+
+	<Section
+		title={{
+			text:
+				i18n
+					.PROJECTS
+					.TITLE,
+		}}
+		link={{
+			label:
+				i18n.SEE_ALL,
+			to: "/projects",
+		}}>
 		<ProjectsWrapper
 			projects={featureProjects}
 		/>
-	</section>
+	</Section>
 </Layout>

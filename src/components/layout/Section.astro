@@ -1,0 +1,40 @@
+---
+import Title from "./Title.astro"
+
+const {
+	title,
+	link,
+	id,
+} =
+	Astro.props
+---
+
+<section
+	id={id ??
+		""}
+	class="px-2 py-10 md:px-6">
+	<div
+		class="flex w-full justify-between">
+		<Title
+			color={title.color}
+			>{
+				title.text
+			}</Title
+		>
+		{
+			link && (
+				<a
+					class="dark:text-gray text-xl italic underline underline-offset-4"
+					href={
+						link.to
+					}>
+					{
+						link.label
+					}
+				</a>
+			)
+		}
+	</div>
+	<slot
+	/>
+</section>
