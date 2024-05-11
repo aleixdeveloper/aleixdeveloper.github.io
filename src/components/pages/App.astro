@@ -38,16 +38,14 @@ const featureProjects =
 
 <Layout
 	title=`${i18n.SEO_TITLE_1} ${new Date().getFullYear()} ${i18n.SEO_TITLE_2}`
-	description={i18n.SEO_DESCRIPTION}
->
+	description={i18n.SEO_DESCRIPTION}>
 	<Hero
 		name={info.name}
 		about={info.about}
 	/>
 
 	<div
-		class="max-h-[340px] w-full"
-	>
+		class="max-h-[340px] w-full">
 		<TopWave
 		/>
 	</div>
@@ -59,15 +57,13 @@ const featureProjects =
 		stack={info.stack}
 	/>
 	<div
-		class="h-32 w-full md:mb-32"
-	>
+		class="h-32 w-full md:mb-32">
 		<BotWave
 		/>
 	</div>
 
 	<div
-		class="z-20"
-	>
+		class="z-20">
 		<Experience
 			title={i18n
 				.EXPERIENCE
@@ -82,18 +78,16 @@ const featureProjects =
 		<Experience title={"ADD-ONS"} details={info.addOns} /> -->
 	</div>
 	<section
-	>
+		class="px-4">
 		<div
-			class="flex items-end justify-between"
-		>
+			class="flex items-end justify-between">
 			<h2
-				class="ml-3 mt-16 border-b text-2xl font-bold text-zinc-600/50 dark:text-zinc-300/50 sm:ml-0 sm:border-none sm:text-xl"
-			>
+				class="ml-3 mt-16 border-b text-2xl font-bold text-zinc-600/50 dark:text-zinc-300/50 sm:ml-0 sm:border-none sm:text-xl">
 				FEATURE
 				PROJECTS
 			</h2>
 			<a
-				class="text-xl italic underline underline-offset-4 dark:text-gray"
+				class="dark:text-gray text-xl italic underline underline-offset-4"
 				href="/projects"
 				>See
 				all</a

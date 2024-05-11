@@ -10,26 +10,42 @@ interface Props {
 	title: string
 }
 
-const { description, title } = Astro.props
-const lang = getLangFromUrl(Astro.url)
+const {
+	description,
+	title,
+} =
+	Astro.props
+const lang =
+	getLangFromUrl(
+		Astro.url
+	)
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html
+	lang={lang}>
 	<head>
-		<MetaHead title={"Portfolio"} ogImageUrl={"/assets/images/profile.png"} />
-		<style>
+		<MetaHead
+			title={"Portfolio"}
+			ogImageUrl={"/assets/images/profile.png"}
+		/>
+		<style
+		>
 			section {
 				@apply mx-auto max-w-[1112px] sm:px-4 md:px-10;
 			}
 		</style>
 	</head>
 
-	<Navbar />
-	<main class="sm:text-md text-sm font-light md:text-lg lg:text-xl xl:text-2xl">
-		<slot />
+	<Navbar
+	/>
+	<main
+		class="sm:text-md mx-auto max-w-[1600px] text-sm font-light md:text-lg lg:text-xl xl:text-2xl">
+		<slot
+		/>
 	</main>
-	<Footer />
+	<Footer
+	/>
 
 
 </html>
