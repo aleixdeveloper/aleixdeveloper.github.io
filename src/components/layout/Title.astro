@@ -1,6 +1,6 @@
 ---
 const {
-	color = "gray",
+	twColor = "text-gray-400",
 	classes,
 } =
 	Astro.props
@@ -9,10 +9,7 @@ const {
 <h2
 	class={[
 		"uppercase text-2xl md:text-3xl font-bold",
-		color ===
-		"navy"
-			? "text-navy-100"
-			: "text-gray-400",
+		twColor,
 		classes,
 	].join(
 		" "
