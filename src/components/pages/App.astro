@@ -5,12 +5,11 @@ import {
 	info,
 	projects,
 } from "@/data/info"
-import ProjectsWrapper from "@/components/general/ProjectsWrapper.astro"
-import BotWave from "@/components/home/BotWave.astro"
 import Experience from "@/components/home/Experience.astro"
 import Hero from "@/components/home/Hero.astro"
-import TopWave from "@/components/home/TopWave.astro"
 import MyStack from "@/components/stack/MyStack.astro"
+import Waves from "../layout/Waves.astro"
+import ProjectsWrapper from "../general/ProjectsWrapper.astro"
 import Section from "../layout/Section.astro"
 
 const {
@@ -38,33 +37,25 @@ const featureProjects =
 ---
 
 <Layout
-	title=`${i18n.SEO_TITLE_1} ${new Date().getFullYear()} ${i18n.SEO_TITLE_2}`
-	description={i18n.SEO_DESCRIPTION}
+	title=`${i18n.WEB_TITLE} [${new Date().getFullYear()}] ${i18n.WEB_TITLE_2}`
+	description={i18n.WEB_DESCRIPTION}
 	ogImageUrl={"/assets/images/profile.png"}>
 	<Hero
 		name={info.name}
 		about={info.about}
 	/>
-
-	<div
-		class="-mb-1 max-h-[340px] w-full">
-		<TopWave
-		/>
-	</div>
-	<div
-		class="dark:from-watermelon-600 from-watermelon-400 to-navy-700 dark:to-navy-900 bg-gradient-to-b">
+	<Waves
+		colors={[
+			"watermelon",
+			"navy",
+		]}>
 		<MyStack
 			title={i18n
 				.STACK
 				.TITLE}
 			stack={info.stack}
 		/>
-	</div>
-	<div
-		class="-mt-1 h-32 w-full md:mb-32">
-		<BotWave
-		/>
-	</div>
+	</Waves>
 
 	<Experience
 		title={i18n
@@ -74,10 +65,35 @@ const featureProjects =
 			.EXPERIENCE
 			.LIST}
 	/>
-	<!-- 	<Experience title={"EDUCATION"} details={info.education} />
-		<Experience title={"VOLUNTEERING"} details={info.volunteering} />
-		<Experience title={"LANGUAGES"} details={info.languages} />
-		<Experience title={"ADD-ONS"} details={info.addOns} /> -->
+	<Experience
+		title={i18n
+			.EDUCATION
+			.TITLE}
+		details={i18n
+			.EDUCATION
+			.LIST}
+	/>
+	<Experience
+		title={i18n
+			.VOLUNTEERING
+			.TITLE}
+		details={i18n
+			.VOLUNTEERING
+			.LIST}
+	/>
+	<!--<Experience
+		title={"LANGUAGES"}
+		details={info.languages}
+	/>
+	<Experience
+		title={"ADD-ONS"}
+		details={info.addOns}
+	/> -->
+	<!-- <Waves
+		colors={[
+			"navy",
+			"gallery",
+		]}> -->
 
 	<Section
 		title={{
@@ -95,4 +111,5 @@ const featureProjects =
 			projects={featureProjects}
 		/>
 	</Section>
+	<!-- </Waves> -->
 </Layout>

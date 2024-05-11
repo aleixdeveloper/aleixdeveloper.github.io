@@ -1,4 +1,7 @@
 {
+ "WEB_TITLE": "Aleix Clemente CV",
+ "WEB_TITLE_2": "Welcome to my virtual resume!",
+ "WEB_DESCRIPTION": "I'm a front-end developer from Barcelona, building software is my passion",
  "HEADER": {
   "LOGO": "",
   "PROJECTS": "Projects"
@@ -67,6 +70,62 @@
      "Soccer coach in lower categories",
      "After-school activity monitor of sports initiation",
      "Offset printing operator"
+    ]
+   }
+  ]
+ },
+ "EDUCATION": {
+  "TITLE": "EDUCATION",
+  "LIST": [
+   {
+    "TITLE": "Linkia FP",
+    "START_DATE": "2018",
+    "END_DATE": "2020",
+    "LOCATION": "Barcelona",
+    "TASKS": [
+     "Web Apps Development Certificate of Higher Education"
+    ]
+   },
+
+   {
+    "TITLE": "UAB - Autonomous University of Barcelona",
+    "START_DATE": "2013",
+    "END_DATE": "2017",
+    "LOCATION": "Bellaterra",
+    "TASKS": [
+     "1st, 2nd and 3rd course - Journalism University Degree"
+    ]
+   },
+   {
+    "TITLE": "IES Frederic Mompou",
+    "START_DATE": "2010",
+    "END_DATE": "2012",
+    "LOCATION": "Sant Vicenç dels Horts",
+    "TASKS": [
+     "Bachelor of Science and Technology"
+    ]
+   },
+   {
+    "TITLE": "IES Frederic Mompou",
+    "START_DATE": "2006",
+    "END_DATE": "2010",
+    "LOCATION": "Sant Vicenç dels Horts",
+    "TASKS": [
+     "Certificate of Secondary Education"
+    ]
+   }
+  ]
+ },
+ "VOLUNTEERING": {
+  "TITLE": "VOLUNTEERING",
+  "LIST": [
+   {
+    "TITLE": "International Cooperation Volunteering in Tujereng",
+    "START_DATE": "2017",
+    "END_DATE": "2017",
+    "LOCATION": "Gambia",
+    "TASKS": [
+     "Documentary recording and editing"
     ]
    }
   ]

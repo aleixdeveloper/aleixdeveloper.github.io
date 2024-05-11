@@ -13,45 +13,7 @@ export const info =
 			"Web Developer",
 		about:
 			"about",
-		/* 	experience: [
-		{
-			name: "OASYS, SL",
-			location: "Barcelona",
-			startDate: "March 2021",
-			endDate: "Present",
-			link: "https://oasys-sw.com/",
-			description: [
-				"- Front-End Developer. Building web-apps for several companies in the pharmaceutical and food industry",
-				"- Working daily with React, Javascript, Semantic/Mui and apexcharts among other technologies",
-			],
-		},
-
-		{
-			name: "DECATHLON SPAIN, S.A.",
-			location: "El Prat de Llobregat",
-			startDate: "2018",
-			endDate: "2020",
-			description: [
-				"- Logistics Operator and IT Technician",
-				"- (Hardware, network, scripting...)",
-				"- Small dashboard website built with PHP",
-			],
-		},
-
-		{
-			name: "Non technical jobs",
-			location: "Barcelona and surroundings",
-			startDate: "2012",
-			endDate: "2016",
-			description: [
-				"- Warehouse waiter at Mercabarna",
-				"- Soccer coach in lower categories",
-				"- After-school activity monitor of sports initiation",
-				"- Offset printing operator",
-			],
-		},
-	], */
-
+		/* 
 		volunteering:
 			[
 				{
@@ -136,7 +98,7 @@ export const info =
 							"Certificate of Secondary Education",
 						],
 				},
-			],
+			], */
 		addOns:
 			[
 				{
