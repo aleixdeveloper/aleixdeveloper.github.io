@@ -8,6 +8,7 @@ import {
 	getLangFromUrl,
 	useTranslatedPath,
 	useTranslations,
+	extractLanguageAndRoute,
 } from "@/i18n/utils"
 
 const pathname =
@@ -44,14 +45,17 @@ const translatePath =
 		lang
 	)
 
-getPathWithoutLocale(
-	currentPath
-)
+const [
+	,
+	path,
+] =
+	extractLanguageAndRoute(
+		pathname
+	)
 
 const navigationLinks =
-	currentPath ===
-	lang +
-		"/projects/"
+	path ===
+	"projects"
 		? [
 				{
 					name:

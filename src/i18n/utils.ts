@@ -4,7 +4,7 @@ import {
 	showDefaultLang,
 	routes,
 } from "./ui"
-
+import { LANGUAGES } from "@/i18n/index"
 export function getLangFromUrl(
 	url: URL
 ) {
@@ -58,6 +58,65 @@ export function useTranslations(
 	}
 }
 
+export function extractLanguageAndRoute(
+	url: string
+): [
+	string,
+	string,
+] {
+	const defaultLang =
+		LANGUAGES.EN
+	const languages: string[] =
+		[
+			LANGUAGES.CAT,
+			LANGUAGES.ES,
+			LANGUAGES.EN,
+		]
+	const parts: string[] =
+		url
+			.split(
+				"/"
+			)
+			.filter(
+				(
+					part
+				) =>
+					part !==
+					""
+			)
+
+	if (
+		parts.length >=
+			1 &&
+		languages.includes(
+			parts[0]
+		)
+	) {
+		const language: string =
+			parts[0]
+		const route: string =
+			parts
+				.slice(
+					1
+				)
+				.join(
+					""
+				) // Join the parts without slashes
+		return [
+			language,
+			route,
+		]
+	} else {
+		// If language not provided, assume default language and use the entire URL as route
+		return [
+			defaultLang,
+			url.replace(
+				/^\//,
+				""
+			),
+		] // Remove leading slash from route
+	}
+}
 export function useTranslatedPath(
 	lang: keyof typeof ui
 ) {

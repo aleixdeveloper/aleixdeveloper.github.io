@@ -1,16 +1,12 @@
 ---
 import { LANGUAGES } from "../i18n/ui"
 import {
-	getRouteFromUrl,
 	useTranslatedPath,
 	getLangFromUrl,
+	extractLanguageAndRoute,
 } from "../i18n/utils"
 import LanguageOption from "./LanguageOption.astro"
 
-const route =
-	getRouteFromUrl(
-		Astro.url
-	)
 const lang =
 	getLangFromUrl(
 		Astro.url
@@ -34,6 +30,16 @@ const otherLocales =
 			locale.code !==
 			lang
 	)
+
+const [
+	_language,
+	pathname,
+] =
+	extractLanguageAndRoute(
+		Astro
+			.url
+			.pathname
+	)
 ---
 
 <div
@@ -55,16 +61,10 @@ const otherLocales =
 				(
 					locale
 				) => {
-					const path =
-						translatePath(
-							`/${route ? route : ""}`,
-							locale.code
-						)
+					const path = `/${locale.code}/${pathname}`
 					console.log(
-						"PATH: ",
-						path,
-						"ROUTE: ",
-						route
+						"path ----------> ",
+						path
 					)
 					return (
 						<LanguageOption
