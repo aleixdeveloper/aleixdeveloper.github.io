@@ -16,6 +16,7 @@ body {
 }
 body {
 	@apply bg-gallery-100 dark:bg-shark-950;
+	min-height: 100vh;
 }
 .waves {
 	height: calc(100vh);

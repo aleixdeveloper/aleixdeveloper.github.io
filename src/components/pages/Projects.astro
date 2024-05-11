@@ -1,0 +1,42 @@
+---
+import Layout from "@/layouts/Layout.astro"
+import { getI18N } from "@/i18n"
+import Section from "../layout/Section.astro"
+import ProjectsWrapper from "../general/ProjectsWrapper.astro"
+import { projects } from "@/data/info"
+
+const {
+	currentLocale,
+} =
+	Astro
+const i18n =
+	getI18N(
+		{
+			currentLocale,
+		}
+	)
+const allProjects =
+	projects.map(
+		(
+			project
+		) =>
+			project
+	)
+---
+
+<Layout
+	title=`Projects`
+	description={"All projects are available in this page."}
+	ogImageUrl={"/assets/images/profile.png"}>
+	<Section
+		title={{
+			text:
+				i18n
+					.PROJECTS
+					.TITLE,
+		}}>
+		<ProjectsWrapper
+			projects={allProjects}
+		/>
+	</Section>
+</Layout>

@@ -39,7 +39,8 @@ const featureProjects =
 
 <Layout
 	title=`${i18n.SEO_TITLE_1} ${new Date().getFullYear()} ${i18n.SEO_TITLE_2}`
-	description={i18n.SEO_DESCRIPTION}>
+	description={i18n.SEO_DESCRIPTION}
+	ogImageUrl={"/assets/images/profile.png"}>
 	<Hero
 		name={info.name}
 		about={info.about}
@@ -60,7 +61,7 @@ const featureProjects =
 		/>
 	</div>
 	<div
-		class="h-32 w-full md:mb-32">
+		class="-mt-1 h-32 w-full md:mb-32">
 		<BotWave
 		/>
 	</div>

@@ -8,11 +8,13 @@ import "../styles/style.css"
 interface Props {
 	description: string
 	title: string
+	ogImageUrl: string
 }
 
 const {
 	description,
 	title,
+	ogImageUrl,
 } =
 	Astro.props
 const lang =
@@ -26,14 +28,15 @@ const lang =
 	lang={lang}>
 	<head>
 		<MetaHead
-			title={"Portfolio"}
-			ogImageUrl={"/assets/images/profile.png"}
+			title={title}
+			description={description}
+			ogImageUrl={ogImageUrl}
 		/>
 		<style
 		>
-			section {
+			/* 	section {
 				@apply mx-auto max-w-[1112px] sm:px-4 md:px-10;
-			}
+			} */
 		</style>
 	</head>
 

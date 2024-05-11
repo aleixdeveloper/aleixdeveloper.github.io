@@ -3,6 +3,11 @@ import ThemeIcon from "@/components/theme/ThemeIcon.astro"
 import LanguageSelector from "@/components/LanguageSelector.astro"
 import { getI18N } from "@/i18n"
 import Link from "./Link.astro"
+import {
+	getLangFromUrl,
+	useTranslatedPath,
+	useTranslations,
+} from "@/i18n/utils"
 
 const pathname =
 	new URL(
@@ -24,21 +29,65 @@ const i18n =
 			currentLocale,
 		}
 	)
-const goto =
+
+const lang =
+	getLangFromUrl(
+		Astro.url
+	)
+const t =
+	useTranslations(
+		lang
+	)
+const translatePath =
+	useTranslatedPath(
+		lang
+	)
+
+console.log(
+	"currentPath, lang +",
+	currentPath,
+	lang +
+		"/projects"
+)
+
+const navigationLinks =
 	currentPath ===
-	"projects"
-		? {
-				name:
-					"Home",
-				to: "/",
-			}
-		: {
-				name:
-					i18n
-						.HEADER
-						.PROJECTS,
-				to: "/projects",
-			}
+	lang +
+		"/projects/"
+		? [
+				{
+					name:
+						"Home",
+					to: translatePath(
+						"/"
+					),
+				},
+			]
+		: [
+				{
+					name:
+						i18n
+							.HEADER
+							.PROJECTS,
+					to: translatePath(
+						"/projects/"
+					),
+				},
+				{
+					name:
+						i18n
+							.STACK
+							.TITLE,
+					to: "#techs",
+				},
+				{
+					name:
+						i18n
+							.EXPERIENCE
+							.TITLE,
+					to: "#experience",
+				},
+			]
 ---
 
 <header
@@ -53,31 +102,23 @@ const goto =
 
 	<nav
 		class="flex items-center gap-8 px-2">
-		<Link
-			classes=" uppercase"
-			to={goto.to}
-			>{
-				goto.name
-			}</Link
-		>
-		<Link
-			classes="uppercase"
-			to="#techs"
-			>{
-				i18n
-					.STACK
-					.TITLE
-			}
-		</Link>
-		<Link
-			classes="uppercase"
-			to="#experience"
-			>{
-				i18n
-					.EXPERIENCE
-					.TITLE
-			}
-		</Link>
+		{
+			navigationLinks.map(
+				(
+					navLink
+				) => (
+					<Link
+						classes="uppercase"
+						to={
+							navLink.to
+						}>
+						{
+							navLink.name
+						}
+					</Link>
+				)
+			)
+		}
 	</nav>
 	<div
 		class="flex items-center gap-4">
