@@ -1,5 +1,4 @@
 ---
-//import ChevronIcon from "@/components/icons/Chevron.astro"
 import { LANGUAGES } from "../i18n/ui"
 import {
 	getRouteFromUrl,
@@ -38,56 +37,43 @@ const otherLocales =
 ---
 
 <div
-	class="relative inline-block w-28"
->
-	<div
-		class="group rounded-md bg-black/30 text-xs text-white transition-all hover:bg-black/70"
-	>
-		<button
-			type="button"
-			aria-expanded="true"
-			aria-haspopup="true"
-		>
-			<LanguageOption
-				flag={currentLocaleData.flag}
-				name={currentLocaleData.name}
-			/>
-		</button>
-		<ul
-			class="group-hover:animate-fade-down group-hover:animate-duration-200 absolute hidden w-full pt-0.5 group-hover:block"
-		>
-			{
-				otherLocales.map(
-					(
-						locale
-					) => (
-						<li class="py-[2px]">
-							<a
-								class="whitespace-no-wrap inline-flex w-full items-center justify-start gap-x-2 rounded-md bg-black/30 px-2 py-1 text-white hover:bg-black/70"
-								href={translatePath(
-									`/${route ? route : ""}`,
-									locale.code
-								)}
-							>
-								<div class="overflow-hidden rounded">
-									<locale.flag />
-								</div>
-								<span class="flex text-xs font-light" />
-								{
+	class="group relative transition-all">
+	<button
+		type="button"
+		class="flex items-center"
+		aria-expanded="true"
+		aria-haspopup="true">
+		<LanguageOption
+			flag={currentLocaleData.flag}
+			text={currentLocaleData.name}
+		/>
+	</button>
+	<ul
+		class="group-hover:animate-fade-down group-hover:animate-duration-200 absolute right-0 hidden w-28 rounded-lg px-2 py-2 group-hover:block group-hover:bg-gray-300/20 group-hover:shadow-xl">
+		{
+			otherLocales.map(
+				(
+					locale
+				) => (
+					<li>
+						<a
+							class="flex w-full items-center rounded-md py-2 hover:font-semibold"
+							href={translatePath(
+								`/${route ? route : ""}`,
+								locale.code
+							)}>
+							<LanguageOption
+								flag={
+									locale.flag
+								}
+								text={
 									locale.name
 								}
-
-								[
-								{
-									locale.symbol
-								}
-
-								]
-							</a>
-						</li>
-					)
+							/>
+						</a>
+					</li>
 				)
-			}
-		</ul>
-	</div>
+			)
+		}
+	</ul>
 </div>

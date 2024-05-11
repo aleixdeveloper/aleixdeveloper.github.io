@@ -1,21 +1,69 @@
 ---
 import ThemeIcon from "@/components/theme/ThemeIcon.astro"
 import LanguageSelector from "@/components/LanguageSelector.astro"
+import { getI18N } from "@/i18n"
 
-const pathname = new URL(Astro.url).pathname
-const currentPath = pathname.slice(1) // remove the first "/"
+const pathname =
+	new URL(
+		Astro.url
+	)
+		.pathname
+const currentPath =
+	pathname.slice(
+		1
+	) // remove the first "/"
+const {
+	currentLocale,
+} =
+	Astro
 
+const i18n =
+	getI18N(
+		{
+			currentLocale,
+		}
+	)
 const goto =
-	currentPath === "projects" ? { name: "Home", to: "/" } : { name: "Projects", to: "/projects" }
+	currentPath ===
+	"projects"
+		? {
+				name:
+					"Home",
+				to: "/",
+			}
+		: {
+				name:
+					i18n
+						.HEADER
+						.PROJECTS,
+				to: "/projects",
+			}
 ---
 
-<header class="container flex h-[80px] items-center justify-between px-4 md:px-6">
-	<a class="font-outfit text-2xl font-semibold dark:font-semibold dark:text-light" href="/">
-		<div id="img-logo"></div></a
+<header
+	class="container flex h-[80px] items-center justify-between px-4 md:px-6">
+	<a
+		class="font-outfit text-2xl font-semibold dark:font-semibold dark:text-light"
+		href="/">
+		<div
+			id="img-logo">
+		</div></a
 	>
-	<nav class="flex items-center gap-8 px-2">
-		<a class="block text-lg dark:text-light" href={goto.to}>{goto.name}</a>
-		<ThemeIcon />
+	<nav
+		class="flex items-center gap-8 px-2">
+		<a
+			class="block text-lg dark:text-light"
+			href={goto.to}
+			>{
+				goto.name
+			}</a
+		>
 	</nav>
-	<LanguageSelector />
+	<div
+		class="flex items-center gap-4">
+		<ThemeIcon
+		/>
+		<LanguageSelector
+		/>
+	</div>
 </header>
