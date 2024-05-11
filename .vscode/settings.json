@@ -1,0 +1,7 @@
+{
+    "prettier.configPath": ".prettierrc.mjs",
+    "prettier.requireConfig": true,
+    "prettier.useEditorConfig": false,
+    "prettier.useTabs": true,
+    "prettier.bracketSameLine": true
+}

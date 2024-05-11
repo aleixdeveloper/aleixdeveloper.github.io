@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets"
+
+const props =
+	Astro.props as {
+		flag: any
+		text: string
+	}
+
+const {
+	text,
+} =
+	props
+---
+
+<div
+	class="flex w-full min-w-20 items-center justify-around gap-x-1"
+>
+	<Image
+		width={24}
+		height={16}
+		src={props.flag}
+		class="rounded"
+		alt="flag"
+	/>
+
+	<span
+		class="text-gray-800 dark:text-gray-100 px-1 text-sm"
+		>{
+			text
+		}
+	</span>
+</div>

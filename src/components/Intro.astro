@@ -1,0 +1,22 @@
+---
+import { getI18N } from "@/i18n"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<section
+	class="relative z-10 mx-auto my-24 max-w-[70ch] text-pretty px-6 text-left text-xl sm:px-20"
+>
+	<img
+		width="40"
+		height="100"
+		src="https://as1.ftcdn.net/v2/jpg/02/48/42/64/1000_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+	/>
+	<h1 class="mx-auto mb-10 text-wrap text-center text-4xl font-semibold tracking-wide">
+		{i18n.INTRO_TITLE}<br />{i18n.INTRO_TITLE_AFTER_BR}
+	</h1>
+	<p set:html={i18n.INTRO_DESCRIPTION_1} />
+	<p set:html={i18n.INTRO_DESCRIPTION_2} />
+	<p set:html={i18n.INTRO_DESCRIPTION_3} />
+</section>

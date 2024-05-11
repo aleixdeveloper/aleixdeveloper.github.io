@@ -1,0 +1,74 @@
+{
+ "HEADER": {
+  "LOGO": "",
+  "PROJECTS": "Projectes"
+ },
+ "HERO": {
+  "INTRODUCTION": "Benvingut al meu currículum virtual! El meu nom es",
+  "DESCRIPTION_1": "Sóc un programador front-end de Barcelona. \n Actualment estic aprenent Astro i Bun i ampliant els meus coneixements sobre Nextjs. Fora del desenvolupament web, les meves altres passions són",
+  "DESCRIPTION_2": "l'enduro",
+  "DESCRIPTION_3": "el futbol",
+  "DESCRIPTION_4": "els escacs",
+  "DESCRIPTION_5": "i el baix"
+ },
+ "STACK": {
+  "TITLE": "Tecnologies",
+  "CATEGORIES": {
+   "design": "DISSENY",
+   "charts": "GRÀFICS",
+   "uiframewrks": "FRAMEWORKS D'UI",
+   "language": "LLENGUATGES",
+   "framewors": "FRAMEWORKS",
+   "database": "BASES DE DADES",
+   "utils": "UTILITATS",
+   "mobile": "MÒBIL"
+  }
+ },
+ "EXPERIENCE": {
+  "TITLE": "EXPERIENCIA",
+  "LIST": [
+   {
+    "TITLE": "KNOWMAD MOOD",
+    "START_DATE": "Abril 2023",
+    "END_DATE": "Actualment",
+    "LOCATION": "Madrid",
+    "TASKS": [
+     "Crear interfícies de banca digital"
+    ]
+   },
+   {
+    "TITLE": "OASYS, SL",
+    "START_DATE": "Marzo 2021",
+    "END_DATE": "Abril 2023",
+    "LOCATION": "Barcelona",
+    "TASKS": [
+     "Creació d'aplicacions web per a diverses empreses de la indústria farmacèutica i alimentària",
+     "Treballant diàriament amb React, Javascript, Semantic/Mui i apexcharts entre altres tecnologies"
+    ]
+   },
+   {
+    "TITLE": "DECATHLON ESPAÑA, S.A.",
+    "START_DATE": "2018",
+    "END_DATE": "2020",
+    "LOCATION": "El Prat de Llobregat",
+    "TASKS": [
+     "Operador Logístic i Tècnic Informàtic",
+     "(Hardware, xarxa, scripting...)",
+     "Gestió d'un petit web creat amb PHP"
+    ]
+   },
+   {
+    "TITLE": "Trabajos no técnicos",
+    "LOCATION": "Barcelona and surroundings",
+    "START_DATE": "2012",
+    "END_DATE": "2016",
+    "TASKS": [
+     "Cambrer de magatzem a Mercabarna",
+     "Entrenador de futbol de categories inferiors",
+     "Monitor d'activitat extraescolar d'iniciació esportiva",
+     "Operador d'impressió òfset"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "HEADER": {
+  "LOGO": "",
+  "PROJECTS": "Projects"
+ },
+ "HERO": {
+  "INTRODUCTION": "Welcome to my virtual resume! My name is",
+  "DESCRIPTION_1": "I'm a front-end developer from Barcelona \n. I am currently learning Astro and Bun, and expanding my knowledge of Nextjs.\n Out of web development, my other passions are",
+  "DESCRIPTION_2": "enduro",
+  "DESCRIPTION_3": "football",
+  "DESCRIPTION_4": "chess",
+  "DESCRIPTION_5": "and bass"
+ },
+ "STACK": {
+  "TITLE": "My Stack",
+  "CATEGORIES": {
+   "design": "DESIGN",
+   "charts": "CHARTS",
+   "uiframeworks": "UI FRAMEWORKS",
+   "languages": "LANGUAGES",
+   "frameworks": "FRAMEWORKS",
+   "databases": "DATABASES",
+   "utils": "UTILS",
+   "mobile": "MOBIL"
+  }
+ },
+ "EXPERIENCE": {
+  "TITLE": "EXPERIENCE",
+  "LIST": [
+   {
+    "TITLE": "KNOWMAD MOOD",
+    "START_DATE": "April 2023",
+    "END_DATE": "Present",
+    "LOCATION": "Madrid",
+    "TASKS": [
+     "Create digital banking interfaces"
+    ]
+   },
+   {
+    "TITLE": "OASYS, SL",
+    "START_DATE": "March 2021",
+    "END_DATE": "April 2023",
+    "LOCATION": "Barcelona",
+    "TASKS": [
+     "Front-End Developer. Building web-apps for several companies in the pharmaceutical and food industry",
+     "Working daily with React, Javascript, Semantic/Mui and apexcharts among other technologies"
+    ]
+   },
+   {
+    "TITLE": "DECATHLON SPAIN, S.A.",
+    "START_DATE": "2018",
+    "END_DATE": "2020",
+    "LOCATION": "El Prat de Llobregat",
+    "TASKS": [
+     "Logistics Operator and IT Technician",
+     "(Hardware, network, scripting...)",
+     "Small dashboard website built with PHP"
+    ]
+   },
+   {
+    "TITLE": "Non technical jobs",
+    "LOCATION": "Barcelona and surroundings",
+    "START_DATE": "2012",
+    "END_DATE": "2016",
+    "TASKS": [
+     "Warehouse waiter at Mercabarna",
+     "Soccer coach in lower categories",
+     "After-school activity monitor of sports initiation",
+     "Offset printing operator"
+    ]
+   }
+  ]
+ }
+}

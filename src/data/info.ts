@@ -1,15 +1,14 @@
 import wordleImg from "../assets/images/wordle/wordle.jpg"
 import musicBandImg from "../assets/images/fenok-store/fenok-store.jpg"
 import encyclopediaImg from "../assets/images/encyclopedia-tourist/encyclopedia.jpg"
+import { getI18N } from "@/i18n"
 
 export const info = {
 	baseUrl: "https://aleixdeveloper.github.io",
 	name: "Aleix Clemente",
 	jobDescription: "Web Developer",
-	about: `A front-end engineer from Barcelona. I am currently learning Astro and Typescript, and expanding my knowledge of Nextjs. Apart from web development, my other passions are enduro, football and chess.
-  `,
-
-	experience: [
+	about: "about",
+	/* 	experience: [
 		{
 			name: "OASYS, SL",
 			location: "Barcelona",
@@ -46,7 +45,7 @@ export const info = {
 				"- Offset printing operator",
 			],
 		},
-	],
+	], */
 
 	volunteering: [
 		{
@@ -122,17 +121,16 @@ export const info = {
 		linkedin: "https://www.linkedin.com/in/aleixclemente/",
 		instagram: "https://www.instagram.com/aleeiixxx/",
 	},
-
-	stack: [
-		{ category: "Design", tech: ["figma"] },
-		{ category: "Charts", tech: ["chartjs", "apexcharts"] },
-		{ category: "UI frameworks", tech: ["tailwindcss", "mui", "headlessui"] },
-		{ category: "Languages", tech: ["js", "ts", "node"] },
-		{ category: "Frameworks", tech: ["react", "next", "astro"] },
-		{ category: "Databases", tech: ["mongodb", "strapi"] },
-		{ category: "Utils", tech: ["git", "eslint"] },
-		{ category: "Mobile", tech: ["expo"] },
-	],
+	stack: {
+		design: ["figma"],
+		charts: ["chartjs", "apexcharts"],
+		uiframeworks: ["tailwindcss", "mui", "headlessui"],
+		languages: ["js", "ts", "node"],
+		frameworks: ["react", "next", "astro"],
+		databases: ["mongodb", "strapi"],
+		utils: ["git", "eslint"],
+		mobile: ["expo"],
+	},
 }
 
 export const projects = [
