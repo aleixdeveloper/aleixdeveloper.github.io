@@ -1,43 +1,34 @@
 ---
-import BotWave from "../home/BotWave.astro"
-import TopWave from "../home/TopWave.astro"
+import BotWave from "./BotWave.astro"
+import TopWave from "./TopWave.astro"
 
 interface Props {
-	colors: [
-		string,
-		string,
-	]
+	topWaveColor: string
+	botWaveColor: string
+	twGradientColors: string
 }
 const {
-	colors,
+	topWaveColor,
+	botWaveColor,
+	twGradientColors,
 } =
 	Astro.props
-console.log(
-	"colors",
-	colors
-)
-
-const gradientColors = `dark:from-${colors[0]}-600 from-${colors[0]}-400 to-${colors[1]}-700 dark:to-${colors[1]}-900`
-console.log(
-	"gradientColors",
-	gradientColors
-)
 ---
 
 <div
 	class="-mb-1 max-h-[340px] w-full">
 	<TopWave
-		twColor="watermelon"
+		twColor={topWaveColor}
 	/>
 </div>
 <div
-	class={`bg-gradient-to-b ${gradientColors}`}>
+	class={`bg-gradient-to-b ${twGradientColors}`}>
 	<slot
 	/>
 </div>
 <div
 	class="-mt-1 h-32 w-full md:mb-32">
 	<BotWave
-		twColor="navy"
+		twColor={botWaveColor}
 	/>
 </div>

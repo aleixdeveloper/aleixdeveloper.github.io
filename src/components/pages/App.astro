@@ -6,7 +6,7 @@ import {
 	projects,
 } from "@/data/info"
 import Experience from "@/components/home/Experience.astro"
-import Hero from "@/components/home/Hero.astro"
+import Hero from "@/components/home/hero/Hero.astro"
 import MyStack from "@/components/stack/MyStack.astro"
 import Waves from "../layout/Waves.astro"
 import ProjectsWrapper from "../general/ProjectsWrapper.astro"
@@ -45,10 +45,9 @@ const featureProjects =
 		about={info.about}
 	/>
 	<Waves
-		colors={[
-			"watermelon",
-			"navy",
-		]}>
+		botWaveColor="navy"
+		topWaveColor="watermelon"
+		twGradientColors="dark:from-watermelon-600 from-watermelon-400 to-navy-700 dark:to-navy-900">
 		<MyStack
 			title={i18n
 				.STACK
@@ -94,22 +93,28 @@ const featureProjects =
 			"navy",
 			"gallery",
 		]}> -->
-
-	<Section
-		title={{
-			text:
-				i18n
-					.PROJECTS
-					.TITLE,
-		}}
-		link={{
-			label:
-				i18n.SEE_ALL,
-			to: "/projects",
-		}}>
-		<ProjectsWrapper
-			projects={featureProjects}
-		/>
-	</Section>
-	<!-- </Waves> -->
+	<Waves
+		botWaveColor="watermelon"
+		topWaveColor="navy"
+		twGradientColors="dark:from-navy-600 from-navy-400 to-watermelon-700 dark:to-watermelon-900">
+		<Section
+			title={{
+				text:
+					i18n
+						.PROJECTS
+						.TITLE,
+				twColor:
+					"text-navy-100 dark:text-navy-200",
+			}}
+			link={{
+				label:
+					i18n.SEE_ALL,
+				to: "/projects",
+			}}>
+			<ProjectsWrapper
+				projects={featureProjects}
+			/>
+		</Section>
+		<!-- </Waves> -->
+	</Waves>
 </Layout>

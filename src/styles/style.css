@@ -37,7 +37,7 @@ body {
 		@apply font-outfit;
 	}
 	h1 {
-		@apply main-heading bg-gradient-to-r from-orange-300  to-[#F97D68] text-6xl sm:text-7xl;
+		@apply main-heading bg-gradient-to-r from-orange-300 to-[#F97D68] text-6xl sm:text-7xl;
 	}
 	h2 {
 		@apply text-xl font-semibold;

@@ -1,0 +1,78 @@
+---
+import { getI18N } from "@/i18n"
+
+const icons_dir =
+	"/assets/icons/"
+
+const {
+	currentLocale,
+} =
+	Astro
+const i18n =
+	getI18N(
+		{
+			currentLocale,
+		}
+	)
+---
+
+<div
+	class="mx-auto flex items-center text-3xl leading-relaxed">
+	<div>
+		<span
+			>{
+				i18n
+					.HERO
+					.DESCRIPTION_1
+			}
+		</span>
+		{
+			i18n
+				.HERO
+				.DESCRIPTION_2
+		}
+		<img
+			class="inline"
+			alt="enduro "
+			src={`${icons_dir}motocross.png`}
+			height={30}
+			width={30}
+		/>,
+		{
+			i18n
+				.HERO
+				.DESCRIPTION_3
+		}
+		<img
+			src={`${icons_dir}soccer.png`}
+			class="inline"
+			alt="soccer "
+			height={25}
+			width={25}
+		/>,
+		{
+			i18n
+				.HERO
+				.DESCRIPTION_4
+		}
+		<img
+			class="inline"
+			alt="chess "
+			src={`${icons_dir}chess.png`}
+			height={25}
+			width={25}
+		/>,
+		{
+			i18n
+				.HERO
+				.DESCRIPTION_5
+		}
+		<img
+			class="inline"
+			alt="bass "
+			src={`${icons_dir}bass.png`}
+			height={30}
+			width={30}
+		/>
+	</div>
+</div>
