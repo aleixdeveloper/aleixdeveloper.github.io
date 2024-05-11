@@ -4,6 +4,7 @@ import LanguageSelector from "@/components/LanguageSelector.astro"
 import { getI18N } from "@/i18n"
 import Link from "./Link.astro"
 import {
+	getPathWithoutLocale,
 	getLangFromUrl,
 	useTranslatedPath,
 	useTranslations,
@@ -43,11 +44,8 @@ const translatePath =
 		lang
 	)
 
-console.log(
-	"currentPath, lang +",
-	currentPath,
-	lang +
-		"/projects"
+getPathWithoutLocale(
+	currentPath
 )
 
 const navigationLinks =
