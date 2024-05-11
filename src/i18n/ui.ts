@@ -1,10 +1,12 @@
-
-import Cat from "@/components/flags/Cat.astro"
-import Es from "@/components/flags/Es.astro"
-import En from "@/components/flags/En.astro"
+import Cat from "@/assets/icons/catalan-flag.webp"
+import Es from "@/assets/icons/spanish-flag.webp"
+import En from "@/assets/icons/english-flag.webp"
 
 // Add missing imports
-export const LANGUAGES: Record<string, { code: string; name: string; symbol: string; flag: typeof SpainFlag }> = {
+export const LANGUAGES: Record<
+	string,
+	{ code: string; name: string; symbol: string; flag: ImageMetadata }
+> = {
 	ca: {
 		symbol: "🇨🇦",
 		code: "ca",
