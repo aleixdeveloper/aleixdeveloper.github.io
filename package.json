@@ -8,32 +8,20 @@
   "start": "astro dev",
   "build": "astro build",
   "preview": "astro preview",
-  "astro": "astro",
-  "lint": "eslint --ext .astro,.ts,.js,.tsx .",
-  "lint:fix": "eslint --ext .astro,.ts,.js,.tsx . --fix",
-  "format": "prettier --write src",
-  "format:check": "prettier --check src",
+  "astro": "astro", 
   "test": "vitest"
  },
  "devDependencies": {
+  
   "@astrojs/sitemap": "^3.1.6",
   "@astrojs/tailwind": "^5.1.0",
+  "@astrojs/ts-plugin": "^1.8.0",
   "astro": "^4.11.5",
   "astro-robots-txt": "^1.0.0",
   "autoprefixer": "^10.4.19",
-  "@antfu/eslint-config": "0.43.1",
-  "@typescript-eslint/eslint-plugin": "^7.15.0",
-  "eslint-plugin-jsx-a11y": "^6.9.0",
   "postcss": "^8.4.39",
-  "typescript": "^5.5.3",
   "tailwindcss": "^3.4.4",
-  "prettier": "3.3.2",
-  "prettier-plugin-astro": "0.14.0",
-  "prettier-plugin-tailwindcss": "0.6.5",
-  "@typescript-eslint/parser": "7.15.0",
-  "eslint": "8.57.0",
-  "eslint-config-prettier": "9.1.0",
-  "eslint-plugin-astro": "0.34.0"
+  "typescript": "^5.5.3"
  },
  "dependencies": {
   "sharp": "^0.33.4",

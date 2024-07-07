@@ -39,15 +39,17 @@ const featureProjects =
 <Layout
 	title=`${i18n.WEB_TITLE} [${new Date().getFullYear()}] ${i18n.WEB_TITLE_2}`
 	description={i18n.WEB_DESCRIPTION}
-	ogImageUrl={"/assets/images/profile.png"}>
+	ogImageUrl={"/assets/images/profile.png"}
+>
 	<Hero
 		name={info.name}
-		about={info.about}
 	/>
+
 	<Waves
 		botWaveColor="navy"
 		topWaveColor="watermelon"
-		twGradientColors="dark:from-watermelon-600 from-watermelon-400 to-navy-700 dark:to-navy-900">
+		twGradientColors="dark:from-watermelon-600 from-watermelon-400 to-navy-700 dark:to-navy-900"
+	>
 		<MyStack
 			title={i18n
 				.STACK
@@ -96,7 +98,8 @@ const featureProjects =
 	<Waves
 		botWaveColor="watermelon"
 		topWaveColor="navy"
-		twGradientColors="dark:from-navy-600 from-navy-400 to-watermelon-700 dark:to-watermelon-900">
+		twGradientColors="dark:from-navy-600 from-navy-400 to-watermelon-700 dark:to-watermelon-900"
+	>
 		<Section
 			title={{
 				text:
@@ -110,7 +113,8 @@ const featureProjects =
 				label:
 					i18n.SEE_ALL,
 				to: "/projects",
-			}}>
+			}}
+		>
 			<ProjectsWrapper
 				projects={featureProjects}
 			/>

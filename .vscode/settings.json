@@ -1,9 +1,0 @@
-{
-    "prettier.configPath": ".prettierrc.mjs",
-    "prettier.requireConfig": true,
-    "prettier.useEditorConfig": false,
-    "prettier.useTabs": true,
-    "prettier.bracketSameLine": true,
-    "css.customData": [".vscode/tailwind.json"],
-    "css.lint.unknownAtRules": "ignore"
-}

@@ -1,81 +1,79 @@
 {
- "WEB_TITLE": "Aleix Clemente CV",
- "WEB_TITLE_2": "¡Bienvenido a mi curriculum virtual! ",
- "WEB_DESCRIPTION": "Soy un desarrollador front-end de Barcelona, ¡construir software es mi passión!",
- "HEADER": {
-  "LOGO": "",
-  "PROJECTS": "Proyectos"
- },
- "HERO": {
-  "INTRODUCTION": "¡Bienvenido a mi curriculum virtual! Mi nombre es",
-  "DESCRIPTION_1": "Soy un desarrollador front-end de Barcelona. \n Actualmente estoy aprendiendo Astro y Bun, y ampliando mis conocimientos de Nextjs. Fuera del desarrollo web, mis otras pasiones son",
-  "DESCRIPTION_2": "el enduro",
-  "DESCRIPTION_3": "el futbol",
-  "DESCRIPTION_4": "el ajedrez",
-  "DESCRIPTION_5": "y el bajo"
- },
- "STACK": {
-  "TITLE": "Mi Stack",
-  "CATEGORIES": {
-   "design": "DISEÑO",
-   "charts": "GRÁFICOS",
-   "uiframeworks": "FRAMEWORKS DE UI",
-   "languages": "LENGUAJES",
-   "frameworks": "FRAMEWORKS",
-   "databases": "BASES DE DATOS",
-   "utils": "UTILIDADES",
-   "mobile": "MÓVIL"
-  }
- },
- "EXPERIENCE": {
-  "TITLE": "EXPERIENCIA",
-  "LIST": [
-   {
-    "TITLE": "KNOWMAD MOOD",
-    "START_DATE": "Abril 2023",
-    "END_DATE": "Actualmente",
-    "LOCATION": "Madrid",
-    "TASKS": [
-     "Crear interfaces de banca digital"
+  "WEB_TITLE": "Aleix Clemente CV",
+  "WEB_TITLE_2": "¡Bienvenido a mi curriculum virtual! ",
+  "WEB_DESCRIPTION": "Soy un desarrollador front-end de Barcelona, ¡construir software es mi passión!",
+  "HEADER": {
+    "LOGO": "",
+    "PROJECTS": "Proyectos"
+  },
+  "HERO": {
+    "INTRODUCTION": "¡Bienvenido a mi curriculum virtual! Mi nombre es",
+    "DESCRIPTION_1": "Soy un desarrollador front-end de Barcelona. \n Actualmente estoy aprendiendo Astro y Bun, y ampliando mis conocimientos de Nextjs. Fuera del desarrollo web, mis otras pasiones son",
+    "DESCRIPTION_2": "el enduro",
+    "DESCRIPTION_3": "el futbol",
+    "DESCRIPTION_4": "el ajedrez",
+    "DESCRIPTION_5": "y el bajo"
+  },
+  "STACK": {
+    "TITLE": "Mi Stack",
+    "CATEGORIES": {
+      "design": "DISEÑO",
+      "charts": "GRÁFICOS",
+      "uiframeworks": "FRAMEWORKS DE UI",
+      "languages": "LENGUAJES",
+      "frameworks": "FRAMEWORKS",
+      "databases": "BASES DE DATOS",
+      "utils": "UTILIDADES",
+      "mobile": "MÓVIL"
+    }
+  },
+  "EXPERIENCE": {
+    "TITLE": "EXPERIENCIA",
+    "LIST": [
+      {
+        "TITLE": "KNOWMAD MOOD",
+        "START_DATE": "Abril 2023",
+        "END_DATE": "Actualmente",
+        "LOCATION": "Madrid",
+        "TASKS": ["Crear interfaces de banca digital"]
+      },
+      {
+        "TITLE": "OASYS, SL",
+        "START_DATE": "Marzo 2021",
+        "END_DATE": "Abril 2023",
+        "LOCATION": "Barcelona",
+        "TASKS": [
+          "Creación de aplicaciones web para varias empresas de la industria farmacéutica y alimentaria",
+          "Trabajando diariamente con React, Javascript, Semantic/Mui y apexcharts entre otras tecnologías"
+        ]
+      },
+      {
+        "TITLE": "DECATHLON ESPAÑA, S.A.",
+        "START_DATE": "2018",
+        "END_DATE": "2020",
+        "LOCATION": "El Prat de Llobregat",
+        "TASKS": [
+          "Operador Logístico y Técnico Informático",
+          "(Hardware, red, scripting...)",
+          "Gestión de un pequeño web creado con PHP"
+        ]
+      },
+      {
+        "TITLE": "Trabajos no técnicos",
+        "LOCATION": "Barcelona i alrededores",
+        "START_DATE": "2012",
+        "END_DATE": "2016",
+        "TASKS": [
+          "Camarero de almacén en Mercabarna",
+          "Entrenador de fútbol de categorías inferiores",
+          "Monitor de actividad extraescolar de iniciación deportiva",
+          "Operador de impresión offset"
+        ]
+      }
     ]
-   },
-   {
-    "TITLE": "OASYS, SL",
-    "START_DATE": "Marzo 2021",
-    "END_DATE": "Abril 2023",
-    "LOCATION": "Barcelona",
-    "TASKS": [
-     "Creación de aplicaciones web para varias empresas de la industria farmacéutica y alimentaria",
-     "Trabajando diariamente con React, Javascript, Semantic/Mui y apexcharts entre otras tecnologías"
-    ]
-   },
-   {
-    "TITLE": "DECATHLON ESPAÑA, S.A.",
-    "START_DATE": "2018",
-    "END_DATE": "2020",
-    "LOCATION": "El Prat de Llobregat",
-    "TASKS": [
-     "Operador Logístico y Técnico Informático",
-     "(Hardware, red, scripting...)",
-     "Gestión de un pequeño web creado con PHP"
-    ]
-   },
-   {
-    "TITLE": "Trabajos no técnicos",
-    "LOCATION": "Barcelona i alrededores",
-    "START_DATE": "2012",
-    "END_DATE": "2016",
-    "TASKS": [
-     "Camarero de almacén en Mercabarna",
-     "Entrenador de fútbol de categorías inferiores",
-     "Monitor de actividad extraescolar de iniciación deportiva",
-     "Operador de impresión offset"
-    ]
-   }
-  ]
- },
- "PROJECTS": {
-  "TITLE": "PROYECTOS DESTACADOS"
- },
- "SEE_ALL": "Ver todos"
+  },
+  "PROJECTS": {
+    "TITLE": "PROYECTOS DESTACADOS"
+  },
+  "SEE_ALL": "Ver todos"
 }
