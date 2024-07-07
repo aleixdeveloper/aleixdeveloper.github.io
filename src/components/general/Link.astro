@@ -1,19 +1,7 @@
 ---
-const {
-	to,
-	classes,
-} =
-	Astro.props
+const { to, classes } = Astro.props;
 ---
 
-<a
-	class={[
-		"hover-underline-animation",
-		classes,
-	].join(
-		" "
-	)}
-	href={to}
-	><slot
-	/></a
+<a class={["hover-underline-animation", classes].join(" ")} href={to}
+  ><slot /></a
 >

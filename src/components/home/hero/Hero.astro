@@ -1,60 +1,39 @@
 ---
-import type { IHeroProps } from "@/types"
-import Description from "./Description.astro"
-import HeroImage from "./HeroImage.astro"
-import { getI18N } from "@/i18n"
+import type { IHeroProps } from "@/types";
+import Description from "./Description.astro";
+import HeroImage from "./HeroImage.astro";
+import { getI18N } from "@/i18n";
 
-const {
-	name,
-} =
-	Astro.props as IHeroProps
-const {
-	currentLocale,
-} =
-	Astro
-const i18n =
-	getI18N(
-		{
-			currentLocale,
-		}
-	)
+const { name } = Astro.props as IHeroProps;
+const { currentLocale } = Astro;
+const i18n = getI18N({
+  currentLocale,
+});
 ---
 
 <section
-	class="relative mt-10 w-full flex-col text-lg text-gray-600 dark:text-gray-300 sm:text-xl lg:text-2xl">
-	<p
-		class="font-extralight text-gray-700 dark:text-gray-200">
-		{
-			i18n
-				.HERO
-				.INTRODUCTION
-		}
-	</p>
-	<div
-		class="relative h-[22rem]">
-		<div
-			class="absolute left-1/2 z-20 -translate-x-1/2 whitespace-nowrap">
-			<h1>
-				{
-					name
-				}
-			</h1>
-		</div>
-		<div
-			class="absolute left-1/2 -translate-x-1/2">
-			<HeroImage
-			/>
-		</div>
-	</div>
+  class="relative mt-10 w-full flex-col text-lg text-gray-600 dark:text-gray-300 sm:text-xl lg:text-2xl"
+>
+  <p class="font-extralight text-gray-700 dark:text-gray-200">
+    {i18n.HERO.INTRODUCTION}
+  </p>
+  <div class="relative h-[22rem]">
+    <div class="absolute left-1/2 z-20 -translate-x-1/2 whitespace-nowrap">
+      <h1>
+        {name}
+      </h1>
+    </div>
+    <div class="absolute left-1/2 -translate-x-1/2">
+      <HeroImage />
+    </div>
+  </div>
 
-	<Description
-	/>
+  <Description />
 </section>
 
-<style
->
-	section {
-		@apply mx-auto max-w-7xl px-4 md:px-6;
-		margin-bottom: 80px;
-	}
+<style>
+  section {
+    @apply mx-auto max-w-7xl px-4 md:px-6;
+    margin-bottom: 80px;
+  }
 </style>

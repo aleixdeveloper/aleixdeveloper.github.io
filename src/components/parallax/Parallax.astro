@@ -1,5 +1,5 @@
 ---
-const { direction } = Astro.props
+const { direction } = Astro.props;
 ---
 
 <div class:list={`reveal ${direction}`}>
@@ -36,22 +36,22 @@ const { direction } = Astro.props
 
 <script>
   const reveal = () => {
-    const reveals = document.querySelectorAll(".reveal")
+    const reveals = document.querySelectorAll(".reveal");
 
-  reveals.forEach((element) => {
-      let isAnimationPlayed = false
+    reveals.forEach((element) => {
+      let isAnimationPlayed = false;
 
-    const windowHeight = window.innerHeight
-    const elementTop = element.getBoundingClientRect().top
-    const elementVisible = 150
+      const windowHeight = window.innerHeight;
+      const elementTop = element.getBoundingClientRect().top;
+      const elementVisible = 150;
 
-    if (elementTop < windowHeight - elementVisible && !isAnimationPlayed) {
-        element.classList.add("active")
-      isAnimationPlayed = true
-    }
-    })
-}
+      if (elementTop < windowHeight - elementVisible && !isAnimationPlayed) {
+        element.classList.add("active");
+        isAnimationPlayed = true;
+      }
+    });
+  };
 
-  window.addEventListener("load", reveal)
-window.addEventListener("scroll", reveal)
+  window.addEventListener("load", reveal);
+  window.addEventListener("scroll", reveal);
 </script>

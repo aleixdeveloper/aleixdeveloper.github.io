@@ -1,46 +1,31 @@
 ---
-import Footer from "@/components/general/Footer.astro"
-import MetaHead from "@/components/general/MetaHead.astro"
-import Navbar from "@/components/general/Navbar.astro"
-import { getLangFromUrl } from "../i18n/utils"
-import "../styles/style.css"
+import Footer from "@/components/general/Footer.astro";
+import MetaHead from "@/components/general/MetaHead.astro";
+import Navbar from "@/components/general/Navbar.astro";
+import { getLangFromUrl } from "../i18n/utils";
+import "../styles/style.css";
 
 interface Props {
-	description: string
-	title: string
-	ogImageUrl: string
+  description: string;
+  title: string;
+  ogImageUrl: string;
 }
 
-const {
-	description,
-	title,
-	ogImageUrl,
-} =
-	Astro.props
-const lang =
-	getLangFromUrl(
-		Astro.url
-	)
+const { description, title, ogImageUrl } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
 ---
 
 <!doctype html>
-<html
-	lang={lang}>
-	<head>
-		<MetaHead
-			title={title}
-			description={description}
-			ogImageUrl={ogImageUrl}
-		/>
-	</head>
+<html lang={lang}>
+  <head>
+    <MetaHead title={title} description={description} ogImageUrl={ogImageUrl} />
+  </head>
 
-	<Navbar
-	/>
-	<main
-		class="sm:text-md mx-auto max-w-[1600px] text-sm font-light md:text-lg lg:text-xl xl:text-2xl">
-		<slot
-		/>
-	</main>
-	<Footer
-	/>
+  <Navbar />
+  <main
+    class="sm:text-md mx-auto max-w-[1600px] text-sm font-light md:text-lg lg:text-xl xl:text-2xl"
+  >
+    <slot />
+  </main>
+  <Footer />
 </html>

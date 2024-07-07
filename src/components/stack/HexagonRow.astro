@@ -1,33 +1,18 @@
 ---
-import Hexagon from "./Hexagon.astro"
+import Hexagon from "./Hexagon.astro";
 
-const {
-	category,
-	techs,
-	firstHalf,
-} =
-	Astro.props
+const { category, techs, firstHalf } = Astro.props;
 ---
 
 <div
-	class:list={`row flex h-[65px] ${firstHalf ? "odd:ml-[36px]" : "justify-end even:mr-[36px]"}`}>
-	<h4
-		class="text-md absolute left-3 z-20 mt-6 font-extralight italic text-gray-50 xs:left-8 sm:text-lg md:left-16 md:text-xl lg:ml-5 lg:text-2xl">
-		{
-			category
-		}
-	</h4>
-	{
-		techs.map(
-			(
-				el
-			) => (
-				<Hexagon
-					element={
-						el
-					}
-				/>
-			)
-		)
-	}
+  class:list={`row flex h-[65px] ${
+    firstHalf ? "odd:ml-[36px]" : "justify-end even:mr-[36px]"
+  }`}
+>
+  <h4
+    class="text-md absolute left-3 z-20 mt-6 font-extralight italic text-gray-50 xs:left-8 sm:text-lg md:left-16 md:text-xl lg:ml-5 lg:text-2xl"
+  >
+    {category}
+  </h4>
+  {techs.map((el) => <Hexagon element={el} />)}
 </div>

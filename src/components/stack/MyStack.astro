@@ -1,82 +1,47 @@
 ---
-import { getI18N } from "@/i18n"
-import HexagonRow from "./HexagonRow.astro"
-import Title from "../layout/Title.astro"
-import Section from "../layout/Section.astro"
+import { getI18N } from "@/i18n";
+import HexagonRow from "./HexagonRow.astro";
+import Title from "../layout/Title.astro";
+import Section from "../layout/Section.astro";
 
-const {
-	title,
-	stack,
-} =
-	Astro.props
-const {
-	currentLocale,
-} =
-	Astro
+const { title, stack } = Astro.props;
+const { currentLocale } = Astro;
 
-const i18n =
-	getI18N(
-		{
-			currentLocale,
-		}
-	)
+const i18n = getI18N({
+  currentLocale,
+});
 ---
 
 <Section
-	id="techs"
-	title={{
-		text:
-			title,
-		twColor:
-			"text-watermelon-100 dark:text-watermelon-200",
-	}}>
-	<div
-		class="colorful-gradient mx-auto mt-2 w-full py-1 md:mt-6 md:rounded-xl md:px-1 lg:p-3">
-		<div
-			class="relative flex flex-col flex-wrap content-center justify-center pb-5 text-white md:rounded-lg">
-			{
-				Object.entries(
-					stack
-				).map(
-					(
-						[
-							key,
-							value,
-						],
-						indx,
-						arr
-					) => {
-						return (
-							<HexagonRow
-								category={
-									i18n
-										.STACK
-										.CATEGORIES[
-										key
-									]
-								}
-								techs={
-									value
-								}
-								firstHalf={
-									indx <
-									Math.ceil(
-										arr.length /
-											2
-									)
-								}
-							/>
-						)
-					}
-				)
-			}
-		</div>
-	</div>
+  id="techs"
+  title={{
+    text: title,
+    twColor: "text-watermelon-100 dark:text-watermelon-200",
+  }}
+>
+  <div
+    class="colorful-gradient mx-auto mt-2 w-full py-1 md:mt-6 md:rounded-xl md:px-1 lg:p-3"
+  >
+    <div
+      class="relative flex flex-col flex-wrap content-center justify-center pb-5 text-white md:rounded-lg"
+    >
+      {
+        Object.entries(stack).map(([key, value], indx, arr) => {
+          return (
+            <HexagonRow
+              category={i18n.STACK.CATEGORIES[key]}
+              techs={value}
+              firstHalf={indx < Math.ceil(arr.length / 2)}
+            />
+          );
+        })
+      }
+    </div>
+  </div>
 </Section>
 
-<style
->
-	section {
-		@apply mx-auto px-0 md:px-10;
-	}
+<style>
+  section {
+    @apply mx-auto px-0 md:px-10;
+  }
 </style>
