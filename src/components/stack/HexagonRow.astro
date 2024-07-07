@@ -9,7 +9,7 @@ const { category, techs, firstHalf } = Astro.props;
     firstHalf ? "odd:ml-[36px]" : "justify-end even:mr-[36px]"
   }`}>
   <p
-    class="text-md absolute left-3 z-20 mt-6 font-extralight italic text-gray-50 xs:left-8 sm:text-lg md:left-16 md:text-xl lg:ml-5 lg:text-2xl">
+    class="text-md absolute left-3 z-20 mt-6 font-extralight italic text-gallery-50 dark:text-shark-50 xs:left-8 sm:text-lg md:left-16 md:text-xl lg:ml-5 lg:text-2xl">
     {category}
   </p>
   {techs.map((el) => <Hexagon element={el} />)}
