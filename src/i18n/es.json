@@ -72,6 +72,51 @@
       }
     ]
   },
+  "EDUCATION": {
+    "TITLE": "EDUCACIÓ",
+    "LIST": [
+      {
+        "TITLE": "Linkia FP",
+        "START_DATE": "2018",
+        "END_DATE": "2020",
+        "LOCATION": "Barcelona",
+        "TASKS": ["Técnico Superior en Desarrollo de Aplicaciones Web"]
+      },
+      {
+        "TITLE": "UAB - Universitat Autònoma de Barcelona",
+        "START_DATE": "2013",
+        "END_DATE": "2017",
+        "LOCATION": "Bellaterra",
+        "TASKS": ["Grado en Periodismo (inacabado)"]
+      },
+      {
+        "TITLE": "IES Frederic Mompou",
+        "START_DATE": "2010",
+        "END_DATE": "2012",
+        "LOCATION": "Sant Vicenç dels Horts",
+        "TASKS": ["Bachillerato científico-tecnológico"]
+      },
+      {
+        "TITLE": "IES Frederic Mompou",
+        "START_DATE": "2006",
+        "END_DATE": "2010",
+        "LOCATION": "Sant Vicenç dels Horts",
+        "TASKS": ["Educación secundaria obligatoria"]
+      }
+    ]
+  },
+  "VOLUNTEERING": {
+    "TITLE": "VOLUNTARIAT",
+    "LIST": [
+      {
+        "TITLE": "Voluntariado de cooperación internacional en Tujereng",
+        "START_DATE": "2017",
+        "END_DATE": "2017",
+        "LOCATION": "Gambia",
+        "TASKS": ["Grabación y edición de documental"]
+      }
+    ]
+  },
   "PROJECTS": {
     "TITLE": "PROYECTOS DESTACADOS"
   },

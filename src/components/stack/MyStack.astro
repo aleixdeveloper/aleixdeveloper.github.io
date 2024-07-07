@@ -16,12 +16,15 @@ const i18n = getI18N({
   id="techs"
   title={{
     text: title,
-    twColor: "text-watermelon-100 dark:text-watermelon-200",
-  }}>
+    twColor: "text-watermelon-100",
+  }}
+>
   <div
-    class="colorful-gradient mx-auto mt-2 w-full py-1 md:mt-6 md:rounded-xl md:px-1 lg:p-3">
+    class="colorful-gradient mx-auto mt-2 w-full py-1 md:mt-6 md:rounded-xl md:px-1 lg:p-3"
+  >
     <div
-      class="relative flex flex-col flex-wrap content-center justify-center pb-5 text-white md:rounded-lg">
+      class="relative flex flex-col flex-wrap content-center justify-center pb-5 text-white md:rounded-lg"
+    >
       {
         Object.entries(stack).map(([key, value], indx, arr) => {
           return (

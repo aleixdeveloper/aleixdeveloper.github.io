@@ -36,7 +36,7 @@ body {
     @apply font-outfit;
   }
   h1 {
-    @apply main-heading bg-orange-300 text-6xl sm:text-7xl;
+    @apply main-heading bg-orange-300 text-5xl sm:text-6xl;
   }
   h2 {
     @apply text-xl font-semibold;

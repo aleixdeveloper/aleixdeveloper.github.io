@@ -28,7 +28,7 @@
     }
   },
   "EXPERIENCE": {
-    "TITLE": "EXPERIENCIA",
+    "TITLE": "EXPERIÈNCIA",
     "LIST": [
       {
         "TITLE": "KNOWMAD MOOD",
@@ -69,6 +69,52 @@
           "Monitor d'activitat extraescolar d'iniciació esportiva",
           "Operador d'impressió òfset"
         ]
+      }
+    ]
+  },
+  
+  "EDUCATION": {
+    "TITLE": "EDUCACIÓ",
+    "LIST": [
+      {
+        "TITLE": "Linkia FP",
+        "START_DATE": "2018",
+        "END_DATE": "2020",
+        "LOCATION": "Barcelona",
+        "TASKS": ["Tècnic Superior en Desenvolupament D'Aplicacions Web"]
+      },
+      {
+        "TITLE": "UAB - Universitat Autònoma de Barcelona",
+        "START_DATE": "2013",
+        "END_DATE": "2017",
+        "LOCATION": "Bellaterra",
+        "TASKS": ["Grau en Periodisme (inacabat)"]
+      },
+      {
+        "TITLE": "IES Frederic Mompou",
+        "START_DATE": "2010",
+        "END_DATE": "2012",
+        "LOCATION": "Sant Vicenç dels Horts",
+        "TASKS": ["Batxillerat cientific-tecnològic"]
+      },
+      {
+        "TITLE": "IES Frederic Mompou",
+        "START_DATE": "2006",
+        "END_DATE": "2010",
+        "LOCATION": "Sant Vicenç dels Horts",
+        "TASKS": ["Educació secundària obligatòria"]
+      }
+    ]
+  },
+  "VOLUNTEERING": {
+    "TITLE": "VOLUNTARIAT",
+    "LIST": [
+      {
+        "TITLE": "Voluntariat de cooperació internacional a Tujereng",
+        "START_DATE": "2017",
+        "END_DATE": "2017",
+        "LOCATION": "Gambia",
+        "TASKS": ["Gravació i edició de documental"]
       }
     ]
   },

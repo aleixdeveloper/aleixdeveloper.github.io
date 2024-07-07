@@ -4,7 +4,7 @@ import Title from "./Title.astro";
 const { title, link, id } = Astro.props;
 ---
 
-<section id={id ?? ""} class="px-2 py-10 md:px-6">
+<section id={id ?? ""} class="px-2 py-6 md:px-6">
   <div class="flex w-full justify-between">
     <Title twColor={title.twColor}>{title.text}</Title>
     {
@@ -14,7 +14,8 @@ const { title, link, id } = Astro.props;
             "text-xl italic underline underline-offset-4",
             title.twColor ?? "text-gray-500 dark:text-gray-300",
           ].join(" ")}
-          href={link.to}>
+          href={link.to}
+        >
           {link.label}
         </a>
       )
