@@ -1,0 +1,30 @@
+---
+import ThemeIcon from "@/components/theme/ThemeIcon.astro";
+import LanguageSelector from "@/components/LanguageSelector.astro";
+import Link from "../general/Link.astro";
+import { getNavigationLinks } from "./Navbar";
+
+const { url: astroUrl, currentLocale } = Astro;
+const navigationLinks = getNavigationLinks(astroUrl, currentLocale);
+---
+
+<header
+  class="container flex h-[80px] items-center justify-between px-4 md:px-6">
+  <a aria-label="website logo" href="/">
+    <div id="img-logo" class="aspect-square h-12 md:h-16"></div></a
+  >
+
+  <nav class="px-2 flex items-center gap-2 md:gap-8 text-sm md:text-lg">
+    {
+      navigationLinks.map((navLink) => (
+        <Link classes="uppercase text-center" to={navLink.to}>
+          {navLink.name}
+        </Link>
+      ))
+    }
+  </nav>
+  <div class="flex items-center gap-4">
+    <ThemeIcon />
+    <LanguageSelector />
+  </div>
+</header>
