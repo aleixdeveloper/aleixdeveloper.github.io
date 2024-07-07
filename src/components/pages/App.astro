@@ -24,38 +24,40 @@ const featureProjects = projects.filter(
   title=`${i18n.WEB_TITLE} [${new Date().getFullYear()}] ${i18n.WEB_TITLE_2}`
   description={i18n.WEB_DESCRIPTION}
   ogImageUrl={"/assets/images/profile.png"}>
-  <Hero name={info.name} />
+  <div>
+    <Hero name={info.name} />
 
-  <Waves
-    botWaveColor="navy"
-    topWaveColor="watermelon"
-    twGradientColors="dark:from-watermelon-600 from-watermelon-400 to-navy-700 dark:to-navy-900">
-    <MyStack title={i18n.STACK.TITLE} stack={info.stack} />
-  </Waves>
+    <Waves
+      botWaveColor="navy"
+      topWaveColor="watermelon"
+      twGradientColors="dark:from-watermelon-600 from-watermelon-400 to-navy-700 dark:to-navy-900">
+      <MyStack title={i18n.STACK.TITLE} stack={info.stack} />
+    </Waves>
 
-  <Experience title={i18n.EXPERIENCE.TITLE} details={i18n.EXPERIENCE.LIST} />
-  <Experience title={i18n.EDUCATION.TITLE} details={i18n.EDUCATION.LIST} />
-  <Experience
-    title={i18n.VOLUNTEERING.TITLE}
-    details={i18n.VOLUNTEERING.LIST}
-  />
-  <Experience title={i18n.LANGUAGES.TITLE} details={i18n.LANGUAGES.LIST} />
-  <Experience title={i18n.ADDONS.TITLE} details={i18n.ADDONS.LIST} />
+    <Experience title={i18n.EXPERIENCE.TITLE} details={i18n.EXPERIENCE.LIST} />
+    <Experience title={i18n.EDUCATION.TITLE} details={i18n.EDUCATION.LIST} />
+    <Experience
+      title={i18n.VOLUNTEERING.TITLE}
+      details={i18n.VOLUNTEERING.LIST}
+    />
+    <Experience title={i18n.LANGUAGES.TITLE} details={i18n.LANGUAGES.LIST} />
+    <Experience title={i18n.ADDONS.TITLE} details={i18n.ADDONS.LIST} />
 
-  <Waves
-    botWaveColor="watermelon"
-    topWaveColor="navy"
-    twGradientColors="dark:from-navy-600 from-navy-400 to-watermelon-700 dark:to-watermelon-900">
-    <Section
-      title={{
-        text: i18n.PROJECTS.TITLE,
-        twColor: "text-navy-100 dark:text-navy-200",
-      }}
-      link={{
-        label: i18n.SEE_ALL,
-        to: "/projects",
-      }}>
-      <ProjectsWrapper projects={featureProjects} />
-    </Section>
-  </Waves>
+    <Waves
+      botWaveColor="watermelon"
+      topWaveColor="navy"
+      twGradientColors="dark:from-navy-600 from-navy-400 to-watermelon-700 dark:to-watermelon-900">
+      <Section
+        title={{
+          text: i18n.PROJECTS.TITLE,
+          twColor: "text-navy-100 dark:text-navy-200",
+        }}
+        link={{
+          label: i18n.SEE_ALL,
+          to: "/projects",
+        }}>
+        <ProjectsWrapper projects={featureProjects} />
+      </Section>
+    </Waves>
+  </div>
 </Layout>

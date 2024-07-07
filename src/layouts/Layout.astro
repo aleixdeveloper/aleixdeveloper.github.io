@@ -20,11 +20,12 @@ const lang = getLangFromUrl(Astro.url);
   <head>
     <MetaHead title={title} description={description} ogImageUrl={ogImageUrl} />
   </head>
-
-  <Navbar />
-  <main
-    class="sm:text-md mx-auto max-w-[1600px] text-sm font-light md:text-lg lg:text-xl xl:text-2xl">
-    <slot />
-  </main>
-  <Footer />
+  <body>
+    <Navbar />
+    <main
+      class="sm:text-md mx-auto text-sm font-light md:text-lg lg:text-xl xl:text-2xl">
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>
