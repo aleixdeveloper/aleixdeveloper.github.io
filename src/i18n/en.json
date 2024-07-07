@@ -118,6 +118,39 @@
       }
     ]
   },
+  "LANGUAGES": {
+    "TITLE": "LANGUAGES",
+    "LIST": [
+      {
+        "TITLE": "Catalan",
+        "TASKS": ["Mother tongue"]
+      },
+      {
+        "TITLE": "Spanish",
+        "TASKS": ["Mother tongue"]
+      },
+      {
+        "TITLE": "English",
+        "TASKS": [
+          "B1 EOI",
+          "Conversational proficiency with strong undertanding of technical terminology"
+        ]
+      }
+    ]
+  },
+  "ADDONS": {
+    "TITLE": "ADD ONS",
+    "LIST": [
+      {
+        "TITLE": "Carnet de conduir",
+        "TASKS": ["Vehicle propi"]
+      },
+      {
+        "TITLE": "Utilitats de Microsoft",
+        "TASKS": ["Word", "Excel", "PowerPoint"]
+      }
+    ]
+  },
   "PROJECTS": {
     "TITLE": "FEATURED PROJECTS"
   },

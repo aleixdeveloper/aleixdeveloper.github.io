@@ -72,7 +72,7 @@
       }
     ]
   },
-  
+
   "EDUCATION": {
     "TITLE": "EDUCACIÓ",
     "LIST": [
@@ -115,6 +115,39 @@
         "END_DATE": "2017",
         "LOCATION": "Gambia",
         "TASKS": ["Gravació i edició de documental"]
+      }
+    ]
+  },
+  "LANGUAGES": {
+    "TITLE": "IDIOMES",
+    "LIST": [
+      {
+        "TITLE": "Català",
+        "TASKS": ["Llengua materna"]
+      },
+      {
+        "TITLE": "Castellà",
+        "TASKS": ["Llengua materna"]
+      },
+      {
+        "TITLE": "Anglès",
+        "TASKS": [
+          "B1 EOI",
+          "Competència conversacional amb una bona comprensió de la terminologia tècnica"
+        ]
+      }
+    ]
+  },
+  "ADDONS": {
+    "TITLE": "EXTRES",
+    "LIST": [
+      {
+        "TITLE": "Car and Motorcycle License",
+        "TASKS": ["Own vehicle"]
+      },
+      {
+        "TITLE": "Microsoft utilities",
+        "TASKS": ["Word", "Excel", "PowerPoint"]
       }
     ]
   },

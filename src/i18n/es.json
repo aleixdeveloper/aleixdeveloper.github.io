@@ -117,6 +117,39 @@
       }
     ]
   },
+  "LANGUAGES": {
+    "TITLE": "IDIOMAS",
+    "LIST": [
+      {
+        "TITLE": "Catalán",
+        "TASKS": ["Lengua materna"]
+      },
+      {
+        "TITLE": "Castellano",
+        "TASKS": ["Lengua materna"]
+      },
+      {
+        "TITLE": "Inglés",
+        "TASKS": [
+          "B1 EOI",
+          "Dominio conversacional con una sólida comprensión de la terminología técnica"
+        ]
+      }
+    ]
+  },
+  "ADDONS": {
+    "TITLE": "EXTRAS",
+    "LIST": [
+      {
+        "TITLE": "Carnet de conducir",
+        "TASKS": ["Vehiculo propio"]
+      },
+      {
+        "TITLE": "Utilidades de Microsoft",
+        "TASKS": ["Word", "Excel", "PowerPoint"]
+      }
+    ]
+  },
   "PROJECTS": {
     "TITLE": "PROYECTOS DESTACADOS"
   },
