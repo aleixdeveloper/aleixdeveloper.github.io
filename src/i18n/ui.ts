@@ -1,7 +1,6 @@
-import Cat from "@/assets/icons/catalan-flag.webp";
-import Es from "@/assets/icons/spanish-flag.webp";
-import En from "@/assets/icons/english-flag.webp";
-
+import Cat from "@/assets/icons/flags/cat.png";
+import Es from "@/assets/icons/flags/es.png";
+import En from "@/assets/icons/flags/uk.png";
 // Add missing imports
 export const LANGUAGES: Record<
   string,
@@ -27,7 +26,7 @@ export const LANGUAGES: Record<
   es: {
     symbol: "🇪🇸",
     code: "es",
-    name: "Español",
+    name: "Castellano",
     flag: Es,
   },
 };
