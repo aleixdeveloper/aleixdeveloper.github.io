@@ -15,13 +15,11 @@ const allProjects = projects.map((project) => project);
 <Layout
   title=`Projects`
   description={"All projects are available in this page."}
-  ogImageUrl={"/assets/images/profile.png"}
->
+  ogImageUrl={"/assets/images/profile.png"}>
   <Section
     title={{
       text: i18n.PROJECTS.TITLE,
-    }}
-  >
+    }}>
     <ProjectsWrapper projects={allProjects} />
   </Section>
 </Layout>

@@ -18,16 +18,14 @@ const [_language, pathname] = extractLanguageAndRoute(Astro.url.pathname);
     type="button"
     class="flex items-center"
     aria-expanded="true"
-    aria-haspopup="true"
-  >
+    aria-haspopup="true">
     <LanguageOption
       flag={currentLocaleData.flag}
       text={currentLocaleData.name}
     />
   </button>
   <div
-    class="group-hover:animate-fade-down group-hover:animate-duration-200 dark:group-hover:bg-shark-900/50 group-hover:bg-gallery-200/30 border-navy-700 dark:border-navy-200 absolute right-0 hidden w-28 flex-col gap-y-2 rounded-lg border-2 px-2 py-3 group-hover:flex group-hover:shadow-xl"
-  >
+    class="group-hover:animate-fade-down group-hover:animate-duration-200 dark:group-hover:bg-shark-900/50 group-hover:bg-gallery-200/30 border-navy-700 dark:border-navy-200 absolute right-0 hidden w-28 flex-col gap-y-2 rounded-lg border-2 px-2 py-3 group-hover:flex group-hover:shadow-xl">
     {
       otherLocales.map((locale) => {
         const path = `/${locale.code}/${pathname}`;

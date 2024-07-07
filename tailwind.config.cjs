@@ -60,9 +60,6 @@ module.exports = {
           900: "#8f0c42",
           950: "#500120",
         },
-        dark: "#1E1D22",
-        light: "#EEEDEC",
-        "dark-gray": "#1A1A1A",
       },
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],

@@ -14,8 +14,7 @@ const { title, link, id } = Astro.props;
             "text-xl italic underline underline-offset-4",
             title.twColor ?? "text-gray-500 dark:text-gray-300",
           ].join(" ")}
-          href={link.to}
-        >
+          href={link.to}>
           {link.label}
         </a>
       )
