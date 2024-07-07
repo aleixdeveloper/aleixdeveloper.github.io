@@ -17,6 +17,8 @@ import expoImg from "../assets/icons/DEV_TECHS/expo.png";
 import apexchartsImg from "../assets/icons/DEV_TECHS/apexcharts.png";
 import headlessuiImg from "../assets/icons/DEV_TECHS/headlessui.png";
 import nodeImg from "../assets/icons/DEV_TECHS/node.png";
+import jestImg from "../assets/icons/DEV_TECHS/jest.png";
+import supabaseImg from "../assets/icons/DEV_TECHS/supabase.png";
 
 export const dictionary = {
   js: { name: "JavaScript", img: jsImg, value: 10, color: "#111" },
@@ -34,9 +36,9 @@ export const dictionary = {
     name: "React Testing Library",
     img: rtlImg,
     value: 10,
-    color: "#242526" /* "#911919" */,
+    color: "#1B1B1D",
   },
-  vitest: { name: "Vitest", img: vitestImg, value: 7, color: "#242424" },
+  vitest: { name: "Vitest", img: vitestImg, value: 7, color: "#1B1B1F" },
   git: { name: "Git", img: gitImg, value: 7, color: "#111" },
   tailwindcss: {
     name: "Tailwindcss",
@@ -47,6 +49,7 @@ export const dictionary = {
   mui: { name: "Mui", img: muiImg, value: 8, color: "#071B2F" },
   figma: { name: "Figma", img: figmaImg, value: 7, color: "#000" },
   mongodb: { name: "MongoDB", img: mongoImg, value: 5, color: "#001E2B" },
+  supabase: { name: "Supabase", img: supabaseImg, value: 10, color: "#232323" },
   eslint: {
     name: "ESLINT",
     img: eslintImg,
@@ -70,4 +73,5 @@ export const dictionary = {
     color: "#111827",
   },
   node: { name: "Nodejs", img: nodeImg, value: 8, color: "#1a2545" },
+  jest: { name: "Jest", img: jestImg, value: 9, color: "#252932" },
 };

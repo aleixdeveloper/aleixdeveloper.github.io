@@ -1,7 +1,6 @@
 import wordleImg from "../assets/images/wordle/wordle.jpg";
 import musicBandImg from "../assets/images/fenok-store/fenok-store.jpg";
 import encyclopediaImg from "../assets/images/encyclopedia-tourist/encyclopedia.jpg";
-import { getI18N } from "@/i18n";
 
 export const info = {
   baseUrl: "https://aleixdeveloper.github.io",
@@ -20,7 +19,8 @@ export const info = {
     uiframeworks: ["tailwindcss", "mui", "headlessui"],
     languages: ["js", "ts", "node"],
     frameworks: ["react", "next", "astro"],
-    databases: ["mongodb", "strapi"],
+    testing: ["jest", "vitest", "rtl"],
+    databases: ["supabase", "mongodb", "strapi"],
     utils: ["git", "eslint"],
     mobile: ["expo"],
   },
