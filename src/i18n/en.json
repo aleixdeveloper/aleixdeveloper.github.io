@@ -147,11 +147,11 @@
     "TITLE": "ADD ONS",
     "LIST": [
       {
-        "TITLE": "Carnet de conduir",
-        "TASKS": ["Vehicle propi"]
+        "TITLE": "Driver's License",
+        "TASKS": ["Own Vehicle"]
       },
       {
-        "TITLE": "Utilitats de Microsoft",
+        "TITLE": "Microsoft Utilities",
         "TASKS": ["Word", "Excel", "PowerPoint"]
       }
     ]
