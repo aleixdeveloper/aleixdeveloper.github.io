@@ -36,7 +36,11 @@
         "START_DATE": "Abril 2023",
         "END_DATE": "Actualmente",
         "LOCATION": "Madrid",
-        "TASKS": ["Crear interfaces de banca digital"]
+        "TASKS": [
+          "Desarrollo de interfaces front-end robustas y escalables para un importante cliente bancario, garantizando el rendimiento y la fiabilidad.",
+          "Aplicación de principios SOLID y arquitectura hexagonal para crear bases de código que se puedan mantener, modulares y testeables.",
+          "Colaboración con equipos multifuncionales para ofrecer experiencias de usuario duraderas y de alta calidad en un entorno financiero de ritmo rápido."
+        ]
       },
       {
         "TITLE": "OASYS, SL",
