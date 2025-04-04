@@ -1,5 +1,4 @@
 {
-  "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "plugins": [
       {
@@ -31,5 +30,6 @@
     },
     "types": ["astro/client", "vitest/globals"]
   },
-  "exclude": ["public"]
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"]
 }
