@@ -1,8 +1,8 @@
 ---
-import { Image } from "astro:assets";
+import { ImageMetadata } from "astro";
 
 const props = Astro.props as {
-  flag: any;
+  flag: ImageMetadata;
   text: string;
   to?: string;
 };
@@ -14,7 +14,6 @@ const { text, to } = props;
   href={to}
   aria-label={text}
   class="flex w-full items-center justify-around rounded-md text-gallery-800 dark:text-shark-200 hover:text-gallery-950 hover:dark:text-shark-50">
-  <Image width={24} height={16} src={props.flag} class="rounded" alt="flag" />
-
+  <img width={24} height={16} src={props.flag.src} class="rounded" alt="flag" />
   <span class="hidden sm:block px-1 text-sm">{text} </span>
 </a>

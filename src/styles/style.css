@@ -98,7 +98,7 @@ html.dark #img-logo {
 }
 /* width */
 ::-webkit-scrollbar {
-  @apply mx-1 w-4;
+  @apply mx-1 w-4 ;
 }
 
 /* Track */
