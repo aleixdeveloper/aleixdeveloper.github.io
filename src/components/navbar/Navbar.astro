@@ -3,6 +3,7 @@ import ThemeIcon from "@/components/theme/ThemeIcon.astro";
 import LanguageSelector from "@/components/LanguageSelector.astro";
 import Link from "../general/Link.astro";
 import { getNavigationLinks } from "./Navbar";
+import { Image } from "astro:assets";
 
 const { url: astroUrl, currentLocale } = Astro;
 const navigationLinks = getNavigationLinks(astroUrl, currentLocale);
@@ -14,12 +15,22 @@ const navigationLinks = getNavigationLinks(astroUrl, currentLocale);
     <div id="img-logo" class="aspect-square h-12 md:h-16"></div></a
   >
 
-  <nav class="px-1 flex gap-2 items-center sm:gap-3 md:gap-8 text-xs xs:text-sm md:text-lg">
+  <nav
+    class="w-full max-w-md px-1 flex gap-2 justify-evenly items-center sm:gap-3 md:gap-8 text-xs xs:text-sm md:text-lg">
     {
       navigationLinks.map((navLink) => (
-        <Link classes="uppercase text-center" to={navLink.to}>
-          {navLink.name}
-        </Link>
+        <>
+          <Link classes="uppercase text-center" to={navLink.to}>
+            <p class="hidden sm:block">{navLink.name}</p>
+            <Image
+              src={navLink.icon}
+              format="svg"
+              class="block sm:hidden"
+              alt={`${navLink.name} icon`}
+              loading="lazy"
+            />
+          </Link>
+        </>
       ))
     }
   </nav>
