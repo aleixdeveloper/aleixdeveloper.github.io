@@ -33,8 +33,8 @@
     "LIST": [
       {
         "TITLE": "PLEXUS TECH",
-        "START_DATE": "March 2025",
-        "END_DATE": "Present",
+        "START_DATE": "Marzo 2025",
+        "END_DATE": "Presente",
         "LOCATION": "Barcelona",
         "TASKS": [
           "Modernización y mantenimiento de un ecosistema de microfrontends basado en React en un entorno bancario",
