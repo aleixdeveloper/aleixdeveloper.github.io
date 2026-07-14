@@ -31,11 +31,22 @@
   "EXPERIENCE": {
     "TITLE": "EXPERIENCE",
     "LIST": [
+       {
+        "TITLE": "PLEXUS TECH",
+        "START_DATE": "March 2025",
+        "END_DATE": "Present",
+        "LOCATION": "Barcelona",
+        "TASKS": [
+          "Modernized and maintained a React-based microfrontend ecosystem in a banking environment",
+          "Built reusable component libraries and shared solutions, improving consistency and maintainability across applications",
+          "Served as the main frontend contributor, balancing architectural standards with business needs"
+        ]
+      },
       {
         "TITLE": "KNOWMAD MOOD",
         "START_DATE": "April 2023",
-        "END_DATE": "Present",
-        "LOCATION": "Madrid",
+        "END_DATE": "March 2025",
+        "LOCATION": "Barcelona",
         "TASKS": [
           "Developed robust and scalable front-end interfaces for a major banking client, ensuring performance and reliability",
           "Applied SOLID principles and Hexagonal Architecture to create maintainable, modular, and testable codebases",
